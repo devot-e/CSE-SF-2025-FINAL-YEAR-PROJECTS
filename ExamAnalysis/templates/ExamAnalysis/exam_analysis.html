@@ -1,0 +1,73 @@
+{% extends 'Analytics_base.html' %}
+
+{% block content %}
+<div class="container-fluid">
+    <h2 class="my-4">Exam Analysis: {{ exam.exam_id }}</h2>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3 bg-primary text-white">
+                    <h6 class="m-0 font-weight-bold">Exam Statistics</h6>
+                </div>
+                <div class="card-body">
+                    <p><strong>Average Score:</strong> {{ avg_score }}%</p>
+                    <p><strong>Participants:</strong> {{ participation_count }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3 bg-primary text-white">
+                    <h6 class="m-0 font-weight-bold">Score Distribution</h6>
+                </div>
+                <div class="card-body">
+                    <img src="data:image/png;base64,{{ score_plot }}" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-3 bg-primary text-white">
+            <h6 class="m-0 font-weight-bold">Question Analysis</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Question</th>
+                            <th>Correct Answers</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for question in question_stats %}
+                        <tr>
+                            <td>{{ question.number }}</td>
+                            <td>{{ question.text|truncatewords:10 }}</td>
+                            <td>{{ question.correct }}/{{ question.total }}</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar
+                                        {% if question.percentage > 70 %}bg-success
+                                        {% elif question.percentage > 40 %}bg-warning
+                                        {% else %}bg-danger
+                                        {% endif %}"
+                                        style="width: {{ question.percentage }}%">
+                                        {{ question.percentage }}%
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
