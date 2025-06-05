@@ -1,0 +1,902 @@
+[
+    {
+      "questionNo": 1,
+      "question": "Which of the following is NOT a linear data structure?",
+      "optionA": "Array",
+      "optionB": "Linked List",
+      "optionC": "Tree",
+      "optionD": "Queue",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 2,
+      "question": "What is the time complexity of binary search in the worst case?",
+      "optionA": "O(1)",
+      "optionB": "O(log n)",
+      "optionC": "O(n)",
+      "optionD": "O(n log n)",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 3,
+      "question": "Which sorting algorithm has the worst-case time complexity of O(n²)?",
+      "optionA": "Merge Sort",
+      "optionB": "Quick Sort",
+      "optionC": "Heap Sort",
+      "optionD": "Bubble Sort",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 4,
+      "question": "In a max-heap, the largest element is always at:",
+      "optionA": "Any leaf node",
+      "optionB": "The root",
+      "optionC": "Left child of root",
+      "optionD": "Right child of root",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 5,
+      "question": "Which data structure uses FIFO (First-In-First-Out) principle?",
+      "optionA": "Stack",
+      "optionB": "Queue",
+      "optionC": "Tree",
+      "optionD": "Graph",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 6,
+      "question": "What is the space complexity of merge sort?",
+      "optionA": "O(1)",
+      "optionB": "O(log n)",
+      "optionC": "O(n)",
+      "optionD": "O(n log n)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 7,
+      "question": "Which of the following is NOT a stable sorting algorithm?",
+      "optionA": "Bubble Sort",
+      "optionB": "Merge Sort",
+      "optionC": "Quick Sort",
+      "optionD": "Insertion Sort",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 8,
+      "question": "The postfix expression for A+B*C is:",
+      "optionA": "ABC*+",
+      "optionB": "AB+C*",
+      "optionC": "A+BC*",
+      "optionD": "AB*C+",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 9,
+      "question": "Which traversal gives nodes in non-decreasing order in a BST?",
+      "optionA": "Pre-order",
+      "optionB": "In-order",
+      "optionC": "Post-order",
+      "optionD": "Level-order",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 10,
+      "question": "What is the maximum number of nodes in a binary tree of height h?",
+      "optionA": "2^h - 1",
+      "optionB": "2^(h+1) - 1",
+      "optionC": "h^2",
+      "optionD": "2h + 1",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 11,
+      "question": "Which data structure is best suited for implementing recursion?",
+      "optionA": "Queue",
+      "optionB": "Stack",
+      "optionC": "Linked List",
+      "optionD": "Tree",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 12,
+      "question": "What is the time complexity to access an element in an array?",
+      "optionA": "O(1)",
+      "optionB": "O(log n)",
+      "optionC": "O(n)",
+      "optionD": "O(n log n)",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 13,
+      "question": "Which algorithm uses divide and conquer strategy?",
+      "optionA": "Bubble Sort",
+      "optionB": "Merge Sort",
+      "optionC": "Insertion Sort",
+      "optionD": "Selection Sort",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 14,
+      "question": "In a complete binary tree with n nodes, the height is:",
+      "optionA": "log n",
+      "optionB": "n/2",
+      "optionC": "n",
+      "optionD": "2^n",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 15,
+      "question": "Which of the following is NOT a hashing technique?",
+      "optionA": "Linear Probing",
+      "optionB": "Quadratic Probing",
+      "optionC": "Double Hashing",
+      "optionD": "Binary Probing",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 16,
+      "question": "The minimum number of comparisons needed to find the minimum and maximum of n elements is:",
+      "optionA": "2n - 2",
+      "optionB": "n - 1",
+      "optionC": "3n/2 - 2",
+      "optionD": "n log n",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 17,
+      "question": "Which graph algorithm uses greedy approach?",
+      "optionA": "Dijkstra's",
+      "optionB": "Floyd-Warshall",
+      "optionC": "Bellman-Ford",
+      "optionD": "Kruskal's",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 18,
+      "question": "What is the time complexity of heapify operation?",
+      "optionA": "O(1)",
+      "optionB": "O(log n)",
+      "optionC": "O(n)",
+      "optionD": "O(n log n)",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 19,
+      "question": "Which data structure is used for BFS of a graph?",
+      "optionA": "Stack",
+      "optionB": "Queue",
+      "optionC": "Priority Queue",
+      "optionD": "Tree",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 20,
+      "question": "The time complexity of matrix chain multiplication using dynamic programming is:",
+      "optionA": "O(n)",
+      "optionB": "O(n log n)",
+      "optionC": "O(n²)",
+      "optionD": "O(n³)",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 21,
+      "question": "Which of the following is NOT an application of stack?",
+      "optionA": "Function calls",
+      "optionB": "Undo operation",
+      "optionC": "Process scheduling",
+      "optionD": "Expression evaluation",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 22,
+      "question": "The worst-case time complexity of quicksort is:",
+      "optionA": "O(n)",
+      "optionB": "O(n log n)",
+      "optionC": "O(n²)",
+      "optionD": "O(log n)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 23,
+      "question": "Which of the following is NOT a type of linked list?",
+      "optionA": "Singly linked",
+      "optionB": "Doubly linked",
+      "optionC": "Circular linked",
+      "optionD": "Quadruply linked",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 24,
+      "question": "The time complexity to insert a node at the beginning of a linked list is:",
+      "optionA": "O(1)",
+      "optionB": "O(log n)",
+      "optionC": "O(n)",
+      "optionD": "O(n log n)",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 25,
+      "question": "Which algorithm is used to find shortest paths from a single source in a graph with negative weights?",
+      "optionA": "Dijkstra's",
+      "optionB": "Floyd-Warshall",
+      "optionC": "Bellman-Ford",
+      "optionD": "Prim's",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 26,
+      "question": "The time complexity to search an element in a BST in worst case is:",
+      "optionA": "O(1)",
+      "optionB": "O(log n)",
+      "optionC": "O(n)",
+      "optionD": "O(n log n)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 27,
+      "question": "Which of the following is NOT a collision resolution technique in hashing?",
+      "optionA": "Chaining",
+      "optionB": "Open Addressing",
+      "optionC": "Double Hashing",
+      "optionD": "Tree Addressing",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 28,
+      "question": "The time complexity of DFS on a graph with V vertices and E edges is:",
+      "optionA": "O(V)",
+      "optionB": "O(E)",
+      "optionC": "O(V + E)",
+      "optionD": "O(V log E)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 29,
+      "question": "Which of the following is NOT a dynamic programming problem?",
+      "optionA": "Fibonacci numbers",
+      "optionB": "Knapsack problem",
+      "optionC": "Tower of Hanoi",
+      "optionD": "Matrix chain multiplication",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 30,
+      "question": "The time complexity to build a heap from n elements is:",
+      "optionA": "O(n)",
+      "optionB": "O(log n)",
+      "optionC": "O(n log n)",
+      "optionD": "O(n²)",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 31,
+      "question": "Which of the following is NOT a balanced BST?",
+      "optionA": "AVL Tree",
+      "optionB": "Red-Black Tree",
+      "optionC": "B-Tree",
+      "optionD": "Binary Heap",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 32,
+      "question": "The time complexity of bubble sort in best case is:",
+      "optionA": "O(1)",
+      "optionB": "O(n)",
+      "optionC": "O(n log n)",
+      "optionD": "O(n²)",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 33,
+      "question": "Which algorithm is used to find strongly connected components in a graph?",
+      "optionA": "Dijkstra's",
+      "optionB": "Kosaraju's",
+      "optionC": "Prim's",
+      "optionD": "Kruskal's",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 34,
+      "question": "The time complexity to delete an element from a max-heap is:",
+      "optionA": "O(1)",
+      "optionB": "O(log n)",
+      "optionC": "O(n)",
+      "optionD": "O(n log n)",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 35,
+      "question": "Which of the following is NOT a graph representation?",
+      "optionA": "Adjacency Matrix",
+      "optionB": "Adjacency List",
+      "optionC": "Incidence Matrix",
+      "optionD": "Incidence Tree",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 36,
+      "question": "The time complexity of radix sort for n numbers with maximum d digits is:",
+      "optionA": "O(n)",
+      "optionB": "O(dn)",
+      "optionC": "O(n log n)",
+      "optionD": "O(n²)",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 37,
+      "question": "Which algorithm is used to find minimum spanning tree?",
+      "optionA": "Dijkstra's",
+      "optionB": "Floyd-Warshall",
+      "optionC": "Prim's",
+      "optionD": "Bellman-Ford",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 38,
+      "question": "The time complexity to reverse a linked list is:",
+      "optionA": "O(1)",
+      "optionB": "O(log n)",
+      "optionC": "O(n)",
+      "optionD": "O(n log n)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 39,
+      "question": "Which of the following is NOT a string matching algorithm?",
+      "optionA": "KMP",
+      "optionB": "Rabin-Karp",
+      "optionC": "Boyer-Moore",
+      "optionD": "Floyd-Warshall",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 40,
+      "question": "The time complexity of counting sort when range is O(n) is:",
+      "optionA": "O(n)",
+      "optionB": "O(n log n)",
+      "optionC": "O(n²)",
+      "optionD": "O(n+k)",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 41,
+      "question": "Which data structure is used for implementing LRU cache?",
+      "optionA": "Queue",
+      "optionB": "Stack",
+      "optionC": "Hash Map + Doubly Linked List",
+      "optionD": "Binary Search Tree",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 42,
+      "question": "The time complexity of Floyd-Warshall algorithm is:",
+      "optionA": "O(n)",
+      "optionB": "O(n log n)",
+      "optionC": "O(n²)",
+      "optionD": "O(n³)",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 43,
+      "question": "Which of the following is NOT a backtracking problem?",
+      "optionA": "N-Queens",
+      "optionB": "Sudoku Solver",
+      "optionC": "Knapsack",
+      "optionD": "Tower of Hanoi",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 44,
+      "question": "The time complexity to find all pairs shortest paths in a graph is:",
+      "optionA": "O(n)",
+      "optionB": "O(n log n)",
+      "optionC": "O(n²)",
+      "optionD": "O(n³)",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 45,
+      "question": "Which algorithm is used to detect cycles in a directed graph?",
+      "optionA": "BFS",
+      "optionB": "DFS",
+      "optionC": "Dijkstra's",
+      "optionD": "Kruskal's",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 46,
+      "question": "The time complexity of insertion in a B-tree of order m with n keys is:",
+      "optionA": "O(1)",
+      "optionB": "O(log n)",
+      "optionC": "O(m log n)",
+      "optionD": "O(n)",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 47,
+      "question": "Which of the following is NOT a divide and conquer algorithm?",
+      "optionA": "Merge Sort",
+      "optionB": "Quick Sort",
+      "optionC": "Binary Search",
+      "optionD": "Insertion Sort",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 48,
+      "question": "The time complexity of topological sort is:",
+      "optionA": "O(V)",
+      "optionB": "O(E)",
+      "optionC": "O(V + E)",
+      "optionD": "O(V log E)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 49,
+      "question": "Which algorithm is used to find articulation points in a graph?",
+      "optionA": "Dijkstra's",
+      "optionB": "Tarjan's",
+      "optionC": "Prim's",
+      "optionD": "Kruskal's",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 50,
+      "question": "The time complexity of Kruskal's algorithm is:",
+      "optionA": "O(E)",
+      "optionB": "O(E log V)",
+      "optionC": "O(V²)",
+      "optionD": "O(V log E)",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 51,
+      "question": "Which of the following is NOT a greedy algorithm?",
+      "optionA": "Dijkstra's",
+      "optionB": "Prim's",
+      "optionC": "Kruskal's",
+      "optionD": "Bellman-Ford",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 52,
+      "question": "The time complexity of Rabin-Karp algorithm in average case is:",
+      "optionA": "O(n)",
+      "optionB": "O(n + m)",
+      "optionC": "O(nm)",
+      "optionD": "O(n log m)",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 53,
+      "question": "Which data structure is used for implementing priority queue?",
+      "optionA": "Stack",
+      "optionB": "Queue",
+      "optionC": "Heap",
+      "optionD": "Linked List",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 54,
+      "question": "The time complexity of Boyer-Moore algorithm in best case is:",
+      "optionA": "O(n/m)",
+      "optionB": "O(n + m)",
+      "optionC": "O(nm)",
+      "optionD": "O(n log m)",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 55,
+      "question": "Which of the following is NOT a dynamic programming optimization?",
+      "optionA": "Memoization",
+      "optionB": "Tabulation",
+      "optionC": "Branch and Bound",
+      "optionD": "State Compression",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 56,
+      "question": "The time complexity of KMP algorithm is:",
+      "optionA": "O(n)",
+      "optionB": "O(n + m)",
+      "optionC": "O(nm)",
+      "optionD": "O(n log m)",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 57,
+      "question": "Which algorithm is used to find bridges in a graph?",
+      "optionA": "Dijkstra's",
+      "optionB": "Tarjan's",
+      "optionC": "Prim's",
+      "optionD": "Kruskal's",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 58,
+      "question": "The time complexity of Prim's algorithm using binary heap is:",
+      "optionA": "O(E)",
+      "optionB": "O(E log V)",
+      "optionC": "O(V²)",
+      "optionD": "O(V log E)",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 59,
+      "question": "Which of the following is NOT a string rotation problem?",
+      "optionA": "Check if one string is rotation of another",
+      "optionB": "Find lexicographically smallest rotation",
+      "optionC": "Find longest palindromic rotation",
+      "optionD": "Find shortest path in a graph",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 60,
+      "question": "The time complexity of counting inversions using merge sort is:",
+      "optionA": "O(n)",
+      "optionB": "O(n log n)",
+      "optionC": "O(n²)",
+      "optionD": "O(log n)",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 61,
+      "question": "Which data structure is used for implementing recursion?",
+      "optionA": "Queue",
+      "optionB": "Stack",
+      "optionC": "Heap",
+      "optionD": "Tree",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 62,
+      "question": "The time complexity of finding median in a sorted array is:",
+      "optionA": "O(1)",
+      "optionB": "O(log n)",
+      "optionC": "O(n)",
+      "optionD": "O(n log n)",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 63,
+      "question": "Which algorithm is used to solve the maximum subarray problem?",
+      "optionA": "Kadane's",
+      "optionB": "Dijkstra's",
+      "optionC": "Prim's",
+      "optionD": "Kruskal's",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 64,
+      "question": "The time complexity of finding longest increasing subsequence using DP is:",
+      "optionA": "O(n)",
+      "optionB": "O(n log n)",
+      "optionC": "O(n²)",
+      "optionD": "O(n³)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 65,
+      "question": "Which of the following is NOT a geometric algorithm?",
+      "optionA": "Convex Hull",
+      "optionB": "Closest Pair",
+      "optionC": "Line Intersection",
+      "optionD": "Shortest Path",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 66,
+      "question": "The time complexity of Strassen's matrix multiplication is:",
+      "optionA": "O(n²)",
+      "optionB": "O(n².807)",
+      "optionC": "O(n³)",
+      "optionD": "O(n log n)",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 67,
+      "question": "Which algorithm is used to find the convex hull of a set of points?",
+      "optionA": "Quickhull",
+      "optionB": "Dijkstra's",
+      "optionC": "Prim's",
+      "optionD": "Kruskal's",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 68,
+      "question": "The time complexity of finding all permutations of a string is:",
+      "optionA": "O(n)",
+      "optionB": "O(n log n)",
+      "optionC": "O(n!)",
+      "optionD": "O(n²)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 69,
+      "question": "Which of the following is NOT a number theoretic algorithm?",
+      "optionA": "Euclidean GCD",
+      "optionB": "Sieve of Eratosthenes",
+      "optionC": "Fast Exponentiation",
+      "optionD": "Quick Sort",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 70,
+      "question": "The time complexity of finding GCD using Euclidean algorithm is:",
+      "optionA": "O(1)",
+      "optionB": "O(log min(a,b))",
+      "optionC": "O(n)",
+      "optionD": "O(n log n)",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 71,
+      "question": "Which data structure is used for implementing disjoint sets?",
+      "optionA": "Array",
+      "optionB": "Linked List",
+      "optionC": "Tree",
+      "optionD": "Graph",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 72,
+      "question": "The time complexity of union-find with path compression is:",
+      "optionA": "O(1)",
+      "optionB": "O(α(n))",
+      "optionC": "O(n)",
+      "optionD": "O(log n)",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 73,
+      "question": "Which of the following is NOT a type of tree traversal?",
+      "optionA": "In-order",
+      "optionB": "Pre-order",
+      "optionC": "Post-order",
+      "optionD": "Level-order",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 74,
+      "question": "The time complexity of finding the longest common subsequence using DP is:",
+      "optionA": "O(n)",
+      "optionB": "O(n log n)",
+      "optionC": "O(n²)",
+      "optionD": "O(n³)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 75,
+      "question": "Which algorithm is used to find the shortest path in a weighted graph?",
+      "optionA": "Dijkstra's",
+      "optionB": "Bellman-Ford",
+      "optionC": "Floyd-Warshall",
+        "optionD": "All of the above",
+        "correctoption": "D"
+    },
+    {
+      "questionNo": 76,
+      "question": "The time complexity of finding the longest palindromic subsequence using DP is:",
+      "optionA": "O(n)",
+      "optionB": "O(n log n)",
+      "optionC": "O(n²)",
+      "optionD": "O(n³)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 77,
+      "question": "Which of the following is NOT a type of binary tree?",
+      "optionA": "Full Binary Tree",
+      "optionB": "Complete Binary Tree",
+      "optionC": "Perfect Binary Tree",
+      "optionD": "Sparse Binary Tree",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 78,
+      "question": "The time complexity of finding the longest common prefix of two strings is:",
+      "optionA": "O(1)",
+      "optionB": "O(log n)",
+      "optionC": "O(n)",
+      "optionD": "O(n log n)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 79,
+      "question": "Which algorithm is used to find the maximum flow in a flow network?",
+      "optionA": "Dijkstra's",
+      "optionB": "Ford-Fulkerson",
+      "optionC": "Prim's",
+      "optionD": "Kruskal's",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 80,
+      "question": "The time complexity of Bellman-Ford algorithm is:",
+      "optionA": "O(V)",
+      "optionB": "O(V + E)",
+      "optionC": "O(VE)",
+      "optionD": "O(V²)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 81,
+      "question": "Which of the following is NOT a type of graph?",
+      "optionA": "Directed Graph",
+      "optionB": "Undirected Graph",
+      "optionC": "Weighted Graph",
+      "optionD": "Circular Graph",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 82,
+      "question": "The time complexity of finding the shortest path in an unweighted graph using BFS is:",
+      "optionA": "O(V)",
+      "optionB": "O(E)",
+      "optionC": "O(V + E)",
+      "optionD": "O(V log E)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 83,
+      "question": "Which of the following is NOT a property of a red-black tree?",
+      "optionA": "Every node is either red or black",
+      "optionB": "The root is always black",
+      "optionC": "All leaves are red",
+      "optionD": "No two red nodes are adjacent",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 84,
+      "question": "The time complexity of finding the diameter of a binary tree is:",
+      "optionA": "O(1)",
+      "optionB": "O(log n)",
+      "optionC": "O(n)",
+      "optionD": "O(n²)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 85,
+      "question": "Which of the following is NOT a type of heap?",
+      "optionA": "Max-Heap",
+      "optionB": "Min-Heap",
+      "optionC": "Fibonacci Heap",
+      "optionD": "Binary Search Heap",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 86,
+      "question": "The time complexity of finding the kth smallest element in a BST is:",
+      "optionA": "O(1)",
+      "optionB": "O(log n)",
+      "optionC": "O(k)",
+      "optionD": "O(n)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 87,
+      "question": "Which of the following is NOT a characteristic of dynamic programming?",
+      "optionA": "Overlapping subproblems",
+      "optionB": "Optimal substructure",
+      "optionC": "Greedy choice property",
+      "optionD": "Memoization",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 88,
+      "question": "The time complexity of finding the maximum subarray sum using Kadane's algorithm is:",
+      "optionA": "O(1)",
+      "optionB": "O(log n)",
+      "optionC": "O(n)",
+      "optionD": "O(n²)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 89,
+      "question": "Which of the following is NOT a type of hashing?",
+      "optionA": "Separate Chaining",
+      "optionB": "Linear Probing",
+      "optionC": "Quadratic Probing",
+      "optionD": "Binary Hashing",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 90,
+      "question": "The time complexity of finding the longest palindromic substring using dynamic programming is:",
+      "optionA": "O(n)",
+      "optionB": "O(n log n)",
+      "optionC": "O(n²)",
+      "optionD": "O(n³)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 91,
+      "question": "Which of the following is NOT a type of graph traversal?",
+      "optionA": "Depth-First Search",
+      "optionB": "Breadth-First Search",
+      "optionC": "Level-Order Traversal",
+      "optionD": "Shortest Path Traversal",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 92,
+      "question": "The time complexity of finding the number of connected components in a graph using DFS is:",
+      "optionA": "O(V)",
+      "optionB": "O(E)",
+      "optionC": "O(V + E)",
+      "optionD": "O(V log E)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 93,
+      "question": "Which of the following is NOT a characteristic of a binary search tree?",
+      "optionA": "Left subtree contains nodes with keys less than the root",
+      "optionB": "Right subtree contains nodes with keys greater than the root",
+      "optionC": "All nodes have at most two children",
+      "optionD": "All levels are completely filled",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 94,
+      "question": "The time complexity of finding the median of two sorted arrays is:",
+      "optionA": "O(1)",
+      "optionB": "O(log n)",
+      "optionC": "O(n)",
+      "optionD": "O(n log n)",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 95,
+      "question": "Which of the following is NOT a type of sorting algorithm?",
+      "optionA": "Merge Sort",
+      "optionB": "Quick Sort",
+      "optionC": "Heap Sort",
+      "optionD": "Binary Sort",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 96,
+      "question": "The time complexity of finding the shortest path in a DAG using topological sort is:",
+      "optionA": "O(V)",
+      "optionB": "O(E)",
+      "optionC": "O(V + E)",
+      "optionD": "O(V log E)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 97,
+      "question": "Which of the following is NOT a type of tree?",
+      "optionA": "Binary Tree",
+      "optionB": "Ternary Tree",
+      "optionC": "Quaternary Tree",
+      "optionD": "Circular Tree",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 98,
+      "question": "The time complexity of finding the longest common substring using dynamic programming is:",
+      "optionA": "O(n)",
+      "optionB": "O(n log n)",
+      "optionC": "O(n²)",
+      "optionD": "O(n³)",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 99,
+      "question": "Which of the following is NOT a type of graph algorithm?",
+      "optionA": "Shortest Path",
+      "optionB": "Minimum Spanning Tree",
+      "optionC": "Maximum Flow",
+      "optionD": "Binary Search",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 100,
+      "question": "Which of the following is NOT a type of binary search tree?",
+      "optionA": "AVL Tree",
+      "optionB": "Red-Black Tree",
+      "optionC": "Splay Tree",
+      "optionD": "Circular Tree",
+      "correctoption": "D"
+    }
+]

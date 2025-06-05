@@ -1,0 +1,902 @@
+[
+    {
+      "questionNo": 1,
+      "question": "What is the primary function of an operating system?",
+      "optionA": "To manage hardware resources",
+      "optionB": "To provide user interface",
+      "optionC": "To execute user programs",
+      "optionD": "All of the above",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 2,
+      "question": "Which of these is not an operating system?",
+      "optionA": "Linux",
+      "optionB": "Windows",
+      "optionC": "Oracle",
+      "optionD": "macOS",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 3,
+      "question": "What is the main purpose of a scheduler in an OS?",
+      "optionA": "Memory allocation",
+      "optionB": "Process synchronization",
+      "optionC": "CPU utilization",
+      "optionD": "File management",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 4,
+      "question": "Which scheduling algorithm allocates CPU to the process with the shortest burst time first?",
+      "optionA": "FCFS",
+      "optionB": "Round Robin",
+      "optionC": "Priority Scheduling",
+      "optionD": "SJF",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 5,
+      "question": "What is thrashing in OS?",
+      "optionA": "High CPU utilization",
+      "optionB": "Excessive page faults",
+      "optionC": "Deadlock situation",
+      "optionD": "Memory leak",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 6,
+      "question": "Which of these is a real-time operating system?",
+      "optionA": "Windows 10",
+      "optionB": "VxWorks",
+      "optionC": "Ubuntu",
+      "optionD": "macOS",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 7,
+      "question": "What is the purpose of virtual memory?",
+      "optionA": "To increase RAM size",
+      "optionB": "To speed up process execution",
+      "optionC": "To allow execution of processes larger than physical memory",
+      "optionD": "To improve CPU scheduling",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 8,
+      "question": "Which of these is not a file allocation method?",
+      "optionA": "Contiguous",
+      "optionB": "Linked",
+      "optionC": "Indexed",
+      "optionD": "Paged",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 9,
+      "question": "What is a deadlock?",
+      "optionA": "A process waiting for I/O",
+      "optionB": "Two or more processes waiting indefinitely for an event",
+      "optionC": "High CPU utilization",
+      "optionD": "Memory fragmentation",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 10,
+      "question": "Which of these is not a necessary condition for deadlock?",
+      "optionA": "Mutual exclusion",
+      "optionB": "Hold and wait",
+      "optionC": "No preemption",
+      "optionD": "Race condition",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 11,
+      "question": "What is the purpose of the fork() system call?",
+      "optionA": "To create a new process",
+      "optionB": "To terminate a process",
+      "optionC": "To allocate memory",
+      "optionD": "To create a thread",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 12,
+      "question": "Which of these is not a process state?",
+      "optionA": "New",
+      "optionB": "Ready",
+      "optionC": "Running",
+      "optionD": "Sleeping",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 13,
+      "question": "What is the main advantage of multiprogramming?",
+      "optionA": "Increased CPU utilization",
+      "optionB": "Faster process execution",
+      "optionC": "Lower memory usage",
+      "optionD": "Simpler scheduling",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 14,
+      "question": "Which of these is not a memory management technique?",
+      "optionA": "Paging",
+      "optionB": "Segmentation",
+      "optionC": "Threading",
+      "optionD": "Virtual memory",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 15,
+      "question": "What is a page fault?",
+      "optionA": "Error in page table",
+      "optionB": "Access to a page not in memory",
+      "optionC": "Corrupted page file",
+      "optionD": "Invalid page reference",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 16,
+      "question": "What is the purpose of the command interpreter?",
+      "optionA": "To manage memory",
+      "optionB": "To handle system calls",
+      "optionC": "To get and execute user commands",
+      "optionD": "To schedule processes",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 17,
+      "question": "Which of these is not a disk scheduling algorithm?",
+      "optionA": "FCFS",
+      "optionB": "SSTF",
+      "optionC": "SCAN",
+      "optionD": "SJF",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 18,
+      "question": "What is the main purpose of an interrupt?",
+      "optionA": "To improve CPU utilization",
+      "optionB": "To signal that an event needs attention",
+      "optionC": "To terminate a process",
+      "optionD": "To allocate memory",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 19,
+      "question": "Which of these is not a type of operating system?",
+      "optionA": "Batch OS",
+      "optionB": "Time-sharing OS",
+      "optionC": "Distributed OS",
+      "optionD": "Sequential OS",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 20,
+      "question": "What is the purpose of a semaphore?",
+      "optionA": "Memory allocation",
+      "optionB": "Process synchronization",
+      "optionC": "File management",
+      "optionD": "CPU scheduling",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 21,
+      "question": "Which of these is not a component of a process?",
+      "optionA": "Program counter",
+      "optionB": "Stack",
+      "optionC": "Heap",
+      "optionD": "Scheduler",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 22,
+      "question": "What is the main purpose of a cache in a computer system?",
+      "optionA": "To increase RAM size",
+      "optionB": "To speed up memory access",
+      "optionC": "To store permanent data",
+      "optionD": "To manage processes",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 23,
+      "question": "Which of these is not a UNIX command?",
+      "optionA": "ls",
+      "optionB": "dir",
+      "optionC": "grep",
+      "optionD": "chmod",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 24,
+      "question": "What is the purpose of the bootloader?",
+      "optionA": "To load the operating system",
+      "optionB": "To manage memory",
+      "optionC": "To schedule processes",
+      "optionD": "To handle interrupts",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 25,
+      "question": "Which of these is not a type of processor scheduling?",
+      "optionA": "Long-term",
+      "optionB": "Medium-term",
+      "optionC": "Short-term",
+      "optionD": "Immediate-term",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 26,
+      "question": "What is the purpose of the BIOS?",
+      "optionA": "To provide interface between hardware and OS",
+      "optionB": "To manage files",
+      "optionC": "To schedule processes",
+      "optionD": "To allocate memory",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 27,
+      "question": "Which of these is not a memory allocation scheme?",
+      "optionA": "First-fit",
+      "optionB": "Best-fit",
+      "optionC": "Worst-fit",
+      "optionD": "Quick-fit",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 28,
+      "question": "What is the main purpose of a TLB?",
+      "optionA": "To speed up virtual memory access",
+      "optionB": "To manage files",
+      "optionC": "To schedule processes",
+      "optionD": "To handle interrupts",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 29,
+      "question": "Which of these is not a page replacement algorithm?",
+      "optionA": "FIFO",
+      "optionB": "LRU",
+      "optionC": "Optimal",
+      "optionD": "SJF",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 30,
+      "question": "What is the purpose of system calls?",
+      "optionA": "To provide interface between processes and OS",
+      "optionB": "To allocate memory",
+      "optionC": "To manage files",
+      "optionD": "To schedule processes",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 31,
+      "question": "Which of these is not a characteristic of a real-time OS?",
+      "optionA": "Time constraints",
+      "optionB": "Predictability",
+      "optionC": "High throughput",
+      "optionD": "Reliability",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 32,
+      "question": "What is the main purpose of a shell?",
+      "optionA": "To manage memory",
+      "optionB": "To provide user interface to OS",
+      "optionC": "To schedule processes",
+      "optionD": "To handle interrupts",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 33,
+      "question": "Which of these is not a Windows system utility?",
+      "optionA": "Task Manager",
+      "optionB": "Disk Cleanup",
+      "optionC": "System Monitor",
+      "optionD": "Kernel",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 34,
+      "question": "What is the purpose of the init process in UNIX?",
+      "optionA": "To start all other processes",
+      "optionB": "To manage memory",
+      "optionC": "To schedule processes",
+      "optionD": "To handle interrupts",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 35,
+      "question": "Which of these is not a type of multiprocessor system?",
+      "optionA": "Symmetric",
+      "optionB": "Asymmetric",
+      "optionC": "Distributed",
+      "optionD": "Serial",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 36,
+      "question": "What is the main purpose of DMA?",
+      "optionA": "To allow devices to access memory directly",
+      "optionB": "To manage files",
+      "optionC": "To schedule processes",
+      "optionD": "To handle interrupts",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 37,
+      "question": "Which of these is not a benefit of threads?",
+      "optionA": "Responsiveness",
+      "optionB": "Resource sharing",
+      "optionC": "Economy",
+      "optionD": "Higher priority",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 38,
+      "question": "What is the purpose of a pipe in UNIX?",
+      "optionA": "To allow communication between processes",
+      "optionB": "To manage memory",
+      "optionC": "To schedule processes",
+      "optionD": "To handle interrupts",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 39,
+      "question": "Which of these is not a common file permission in UNIX?",
+      "optionA": "Read",
+      "optionB": "Write",
+      "optionC": "Execute",
+      "optionD": "Delete",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 40,
+      "question": "What is the main purpose of a file system?",
+      "optionA": "To organize and store data",
+      "optionB": "To manage memory",
+      "optionC": "To schedule processes",
+      "optionD": "To handle interrupts",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 41,
+      "question": "Which of these is not a common file system?",
+      "optionA": "NTFS",
+      "optionB": "FAT32",
+      "optionC": "EXT4",
+      "optionD": "TCP",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 42,
+      "question": "What is the purpose of the 'ls' command in UNIX?",
+      "optionA": "List files",
+      "optionB": "Change directory",
+      "optionC": "Create file",
+      "optionD": "Delete file",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 43,
+      "question": "Which of these is not a common UNIX shell?",
+      "optionA": "Bash",
+      "optionB": "Csh",
+      "optionC": "Ksh",
+      "optionD": "Gsh",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 44,
+      "question": "What is the purpose of the 'grep' command?",
+      "optionA": "Search text",
+      "optionB": "Edit files",
+      "optionC": "List processes",
+      "optionD": "Manage memory",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 45,
+      "question": "Which of these is not a common Windows command?",
+      "optionA": "dir",
+      "optionB": "cd",
+      "optionC": "ls",
+      "optionD": "copy",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 46,
+      "question": "What is the purpose of the 'chmod' command?",
+      "optionA": "Change file permissions",
+      "optionB": "Change directory",
+      "optionC": "Create file",
+      "optionD": "Delete file",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 47,
+      "question": "Which of these is not a common process state transition?",
+      "optionA": "Ready → Running",
+      "optionB": "Running → Waiting",
+      "optionC": "Waiting → Ready",
+      "optionD": "New → Terminated",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 48,
+      "question": "What is the purpose of the 'ps' command?",
+      "optionA": "List processes",
+      "optionB": "Change permissions",
+      "optionC": "Create process",
+      "optionD": "Terminate process",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 49,
+      "question": "Which of these is not a common memory management technique?",
+      "optionA": "Paging",
+      "optionB": "Segmentation",
+      "optionC": "Threading",
+      "optionD": "Virtual memory",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 50,
+      "question": "What is the purpose of the 'kill' command?",
+      "optionA": "Terminate process",
+      "optionB": "Stop CPU",
+      "optionC": "Delete file",
+      "optionD": "Clear memory",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 51,
+      "question": "Which of these is not a common disk scheduling algorithm?",
+      "optionA": "FCFS",
+      "optionB": "SSTF",
+      "optionC": "SCAN",
+      "optionD": "PRI",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 52,
+      "question": "What is the purpose of the 'mkdir' command?",
+      "optionA": "Create directory",
+      "optionB": "Delete directory",
+      "optionC": "Move directory",
+      "optionD": "List directory",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 53,
+      "question": "Which of these is not a common page replacement algorithm?",
+      "optionA": "FIFO",
+      "optionB": "LRU",
+      "optionC": "Optimal",
+      "optionD": "SJF",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 54,
+      "question": "What is the purpose of the 'rm' command?",
+      "optionA": "Remove files",
+      "optionB": "Rename files",
+      "optionC": "Read files",
+      "optionD": "Write files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 55,
+      "question": "Which of these is not a common UNIX directory?",
+      "optionA": "/bin",
+      "optionB": "/etc",
+      "optionC": "/sys",
+      "optionD": "/win",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 56,
+      "question": "What is the purpose of the 'mv' command?",
+      "optionA": "Move/rename files",
+      "optionB": "Delete files",
+      "optionC": "Create files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 57,
+      "question": "Which of these is not a common UNIX file type?",
+      "optionA": "Regular file",
+      "optionB": "Directory",
+      "optionC": "Device file",
+      "optionD": "Network file",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 58,
+      "question": "What is the purpose of the 'cp' command?",
+      "optionA": "Copy files",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 59,
+      "question": "Which of these is not a common UNIX permission?",
+      "optionA": "Read",
+      "optionB": "Write",
+      "optionC": "Execute",
+      "optionD": "Delete",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 60,
+      "question": "What is the purpose of the 'cat' command?",
+      "optionA": "Display file contents",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 61,
+      "question": "Which of these is not a common UNIX redirection operator?",
+      "optionA": ">",
+      "optionB": "<",
+      "optionC": "|",
+      "optionD": "%",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 62,
+      "question": "What is the purpose of the 'find' command?",
+      "optionA": "Search for files",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 63,
+      "question": "Which of these is not a common UNIX filter?",
+      "optionA": "grep",
+      "optionB": "sort",
+      "optionC": "wc",
+      "optionD": "mv",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 64,
+      "question": "What is the purpose of the 'sort' command?",
+      "optionA": "Sort lines of text",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 65,
+      "question": "Which of these is not a common UNIX utility?",
+      "optionA": "awk",
+      "optionB": "sed",
+      "optionC": "cut",
+      "optionD": "run",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 66,
+      "question": "What is the purpose of the 'wc' command?",
+      "optionA": "Count words, lines, characters",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 67,
+      "question": "Which of these is not a common UNIX signal?",
+      "optionA": "SIGKILL",
+      "optionB": "SIGTERM",
+      "optionC": "SIGINT",
+      "optionD": "SIGRUN",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 68,
+      "question": "What is the purpose of the 'head' command?",
+      "optionA": "Display beginning of file",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 69,
+      "question": "Which of these is not a common UNIX environment variable?",
+      "optionA": "PATH",
+      "optionB": "HOME",
+      "optionC": "USER",
+      "optionD": "RUN",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 70,
+      "question": "What is the purpose of the 'tail' command?",
+      "optionA": "Display end of file",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 71,
+      "question": "Which of these is not a common UNIX shell script extension?",
+      "optionA": ".sh",
+      "optionB": ".bash",
+      "optionC": ".script",
+      "optionD": ".exe",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 72,
+      "question": "What is the purpose of the 'echo' command?",
+      "optionA": "Display message",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 73,
+      "question": "Which of these is not a common UNIX file permission?",
+      "optionA": "r",
+      "optionB": "w",
+      "optionC": "x",
+      "optionD": "d",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 74,
+      "question": "What is the purpose of the 'pwd' command?",
+      "optionA": "Print working directory",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 75,
+      "question": "Which of these is not a common UNIX special character?",
+      "optionA": "*",
+      "optionB": "?",
+      "optionC": "[ ]",
+      "optionD": "#",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 76,
+      "question": "What is the purpose of the 'man' command?",
+      "optionA": "Display manual pages",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 77,
+      "question": "Which of these is not a common UNIX file system?",
+      "optionA": "ext4",
+      "optionB": "XFS",
+      "optionC": "NTFS",
+      "optionD": "ZFS",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 78,
+      "question": "What is the purpose of the 'unalias' command?",
+      "optionA": "Remove alias",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 79,
+      "question": "Which of these is not a common UNIX shell builtin?",
+      "optionA": "cd",
+      "optionB": "echo",
+      "optionC": "pwd",
+      "optionD": "ls",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 80,
+      "question": "What is the purpose of the 'alias' command?",
+      "optionA": "Create command shortcut",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 81,
+      "question": "Which of these is not a common UNIX process state?",
+      "optionA": "Running",
+      "optionB": "Sleeping",
+      "optionC": "Zombie",
+      "optionD": "Ghost",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 82,
+      "question": "What is the purpose of the 'jobs' command?",
+      "optionA": "List background jobs",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 83,
+      "question": "Which of these is not a common UNIX shell variable?",
+      "optionA": "$PATH",
+      "optionB": "$HOME",
+      "optionC": "$USER",
+      "optionD": "$RUN",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 84,
+      "question": "What is the purpose of the 'fg' command?",
+      "optionA": "Bring job to foreground",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 85,
+      "question": "Which of these is not a common UNIX text editor?",
+      "optionA": "vi",
+      "optionB": "nano",
+      "optionC": "emacs",
+      "optionD": "word",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 86,
+      "question": "What is the purpose of the 'bg' command?",
+      "optionA": "Send job to background",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 87,
+      "question": "Which of these is not a common UNIX archive format?",
+      "optionA": "tar",
+      "optionB": "gz",
+      "optionC": "zip",
+      "optionD": "exe",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 88,
+      "question": "What is the purpose of the 'tar' command?",
+      "optionA": "Archive files",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 89,
+      "question": "Which of these is not a common UNIX compression tool?",
+      "optionA": "gzip",
+      "optionB": "bzip2",
+      "optionC": "zip",
+      "optionD": "pack",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 90,
+      "question": "What is the purpose of the 'gzip' command?",
+      "optionA": "Compress files",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 91,
+      "question": "Which of these is not a common UNIX network command?",
+      "optionA": "ping",
+      "optionB": "ifconfig",
+      "optionC": "netstat",
+      "optionD": "run",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 92,
+      "question": "What is the purpose of the 'ping' command?",
+      "optionA": "Test network connection",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 93,
+      "question": "Which of these is not a common UNIX user management command?",
+      "optionA": "useradd",
+      "optionB": "passwd",
+      "optionC": "usermod",
+      "optionD": "runuser",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 94,
+      "question": "What is the purpose of the 'useradd' command?",
+      "optionA": "Add user",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 95,
+      "question": "Which of these is not a common UNIX file comparison tool?",
+      "optionA": "diff",
+      "optionB": "cmp",
+      "optionC": "comm",
+      "optionD": "match",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 96,
+      "question": "What is the purpose of the 'diff' command?",
+      "optionA": "Compare files",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 97,
+      "question": "Which of these is not a common UNIX system monitoring tool?",
+      "optionA": "top",
+      "optionB": "vmstat",
+      "optionC": "iostat",
+      "optionD": "runstat",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 98,
+      "question": "What is the purpose of the 'top' command?",
+      "optionA": "Display system processes",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 99,
+      "question": "Which of these is not a common UNIX backup tool?",
+      "optionA": "rsync",
+      "optionB": "dd",
+      "optionC": "tar",
+      "optionD": "back",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 100,
+      "question": "What is the purpose of the 'rsync' command?",
+      "optionA": "Synchronize files",
+      "optionB": "Delete files",
+      "optionC": "Move files",
+      "optionD": "List files",
+      "correctoption": "A"
+    }
+  ]

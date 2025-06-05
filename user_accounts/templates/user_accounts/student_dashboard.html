@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h3 class="mb-0">Student Dashboard</h3>
+                    <div>
+                        <a href="{% url 'password_reset' %}" class="btn btn-outline-primary me-2">
+                            <i class="fas fa-key"></i> Change Password
+                        </a>
+                        <a href="{% url 'exam_conduct:exam_entry' %}" class="btn btn-primary">
+                            <i class="fas fa-pen-alt"></i> Take New Exam
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Welcome, {{ student.name }}!</h4>
+                            <p class="text-muted">Student ID: {{ student.student_id }}</p>
+                            <p class="text-muted">Email: {{ student.email }}</p>
+                            <p class="text-muted">Phone: {{ student.phone }}</p>
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <h4>Your Results</h4>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Exam ID</th>
+                                            <th>Date</th>
+                                            <th>Score</th>
+                                            <th>Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for result in student.result_set.all %}
+                                        <tr>
+                                            <td>{{ result.exam.exam_id }}</td>
+                                            <td>{{ result.date }}</td>
+                                            <td>{{ result.scores.total }}%</td>
+                                            <td>
+                                                <a href="#" class="btn btn-sm btn-outline-info">
+                                                    View Details
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        {% empty %}
+                                        <tr>
+                                            <td colspan="4" class="text-center">No results available yet.</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

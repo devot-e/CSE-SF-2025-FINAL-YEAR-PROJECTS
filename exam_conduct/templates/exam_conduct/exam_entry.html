@@ -1,0 +1,26 @@
+{% extends 'exam_conduct/exam_base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0">Enter Exam ID</h3>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="id_exam_id" class="form-label">Exam ID:</label>
+                            <input type="text" name="exam_id" class="form-control"
+                                   id="id_exam_id" placeholder="Enter your exam ID" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Start Exam</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

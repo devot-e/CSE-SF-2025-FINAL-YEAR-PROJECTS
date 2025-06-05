@@ -1,0 +1,903 @@
+[
+    {
+        "questionNo": 1,
+        "question": "What does DBMS stand for?",
+        "optionA": "Database Management System",
+        "optionB": "Data Backup Management System",
+        "optionC": "Database Manipulation Software",
+        "optionD": "Data Building and Management System",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 2,
+        "question": "Which of the following is a primary key?",
+        "optionA": "A unique identifier for a record",
+        "optionB": "A field that allows duplicate values",
+        "optionC": "A field that stores null values",
+        "optionD": "A field used for indexing",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 3,
+        "question": "Which SQL command is used to retrieve data from a database?",
+        "optionA": "INSERT",
+        "optionB": "SELECT",
+        "optionC": "UPDATE",
+        "optionD": "DELETE",
+        "correctoption": "B"
+    },
+    {
+        "questionNo": 4,
+        "question": "What is a foreign key?",
+        "optionA": "A key that uniquely identifies a record",
+        "optionB": "A key used to link two tables",
+        "optionC": "A key that allows duplicate values",
+        "optionD": "A key used for encryption",
+        "correctoption": "B"
+    },
+    {
+        "questionNo": 5,
+        "question": "Which of the following is a type of database model?",
+        "optionA": "Hierarchical",
+        "optionB": "Network",
+        "optionC": "Relational",
+        "optionD": "All of the above",
+        "correctoption": "D"
+    },
+    {
+        "questionNo": 6,
+        "question": "What does SQL stand for?",
+        "optionA": "Structured Query Language",
+        "optionB": "Simple Query Language",
+        "optionC": "Sequential Query Language",
+        "optionD": "Standard Query Language",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 7,
+        "question": "Which of the following is a DDL command?",
+        "optionA": "SELECT",
+        "optionB": "INSERT",
+        "optionC": "CREATE",
+        "optionD": "UPDATE",
+        "correctoption": "C"
+    },
+    {
+        "questionNo": 8,
+        "question": "What is normalization in DBMS?",
+        "optionA": "The process of organizing data to reduce redundancy",
+        "optionB": "The process of backing up data",
+        "optionC": "The process of encrypting data",
+        "optionD": "The process of indexing data",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 9,
+        "question": "Which of the following is a NoSQL database?",
+        "optionA": "MySQL",
+        "optionB": "MongoDB",
+        "optionC": "Oracle",
+        "optionD": "PostgreSQL",
+        "correctoption": "B"
+    },
+    {
+        "questionNo": 10,
+        "question": "What is a transaction in DBMS?",
+        "optionA": "A single unit of work",
+        "optionB": "A backup operation",
+        "optionC": "A data retrieval operation",
+        "optionD": "A data encryption operation",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 11,
+        "question": "What is the purpose of an index in a database?",
+        "optionA": "To speed up data retrieval",
+        "optionB": "To store data",
+        "optionC": "To enforce constraints",
+        "optionD": "To back up data",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 12,
+        "question": "Which of the following is a valid SQL aggregate function?",
+        "optionA": "SUM",
+        "optionB": "JOIN",
+        "optionC": "WHERE",
+        "optionD": "GROUP",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 13,
+        "question": "What is a view in SQL?",
+        "optionA": "A virtual table based on the result of a query",
+        "optionB": "A physical table in the database",
+        "optionC": "A backup of the database",
+        "optionD": "A type of index",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 14,
+        "question": "What is the ACID property in DBMS?",
+        "optionA": "Atomicity, Consistency, Isolation, Durability",
+        "optionB": "Accuracy, Consistency, Integrity, Durability",
+        "optionC": "Atomicity, Concurrency, Isolation, Durability",
+        "optionD": "Accuracy, Concurrency, Integrity, Durability",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 15,
+        "question": "Which of the following is a type of join in SQL?",
+        "optionA": "INNER JOIN",
+        "optionB": "OUTER JOIN",
+        "optionC": "CROSS JOIN",
+        "optionD": "All of the above",
+        "correctoption": "D"
+    }
+    ,
+    {
+        "questionNo": 16,
+        "question": "What is the purpose of the GROUP BY clause in SQL?",
+        "optionA": "To group rows that have the same values in specified columns",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 17,
+        "question": "Which of the following is a valid SQL constraint?",
+        "optionA": "PRIMARY KEY",
+        "optionB": "FOREIGN KEY",
+        "optionC": "UNIQUE",
+        "optionD": "All of the above",
+        "correctoption": "D"
+    },
+    {
+        "questionNo": 18,
+        "question": "What is the purpose of the HAVING clause in SQL?",
+        "optionA": "To filter groups based on a condition",
+        "optionB": "To filter rows based on a condition",
+        "optionC": "To sort the result set",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 19,
+        "question": "Which of the following is a valid SQL data type?",
+        "optionA": "VARCHAR",
+        "optionB": "INT",
+        "optionC": "DATE",
+        "optionD": "All of the above",
+        "correctoption": "D"
+    },
+    {
+        "questionNo": 20,
+        "question": "What is the purpose of the DISTINCT keyword in SQL?",
+        "optionA": "To remove duplicate rows from the result set",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 21,
+        "question": "What is a composite key in DBMS?",
+        "optionA": "A key that consists of two or more attributes",
+        "optionB": "A key that uniquely identifies a record",
+        "optionC": "A key used to link two tables",
+        "optionD": "A key that allows duplicate values",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 22,
+        "question": "Which of the following is a valid SQL JOIN type?",
+        "optionA": "INNER JOIN",
+        "optionB": "LEFT JOIN",
+        "optionC": "RIGHT JOIN",
+        "optionD": "All of the above",
+        "correctoption": "D"
+    },
+    {
+        "questionNo": 23,
+        "question": "What is the purpose of the UNION operator in SQL?",
+        "optionA": "To combine the result sets of two or more SELECT statements",
+        "optionB": "To filter rows based on a condition",
+        "optionC": "To sort the result set",
+        "optionD": "To group rows that have the same values",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 24,
+        "question": "What is the purpose of the TRUNCATE command in SQL?",
+        "optionA": "To delete all rows from a table without logging individual row deletions",
+        "optionB": "To delete specific rows from a table",
+        "optionC": "To modify the structure of a table",
+        "optionD": "To retrieve data from a table",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 25,
+        "question": "Which of the following is a valid SQL function?",
+        "optionA": "COUNT",
+        "optionB": "AVG",
+        "optionC": "MAX",
+        "optionD": "All of the above",
+        "correctoption": "D"
+    },
+    {
+        "questionNo": 26,
+        "question": "What is the purpose of the ALTER command in SQL?",
+        "optionA": "To modify the structure of a table",
+        "optionB": "To delete rows from a table",
+        "optionC": "To retrieve data from a table",
+        "optionD": "To insert data into a table",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 27,
+        "question": "Which of the following is a valid SQL operator?",
+        "optionA": "AND",
+        "optionB": "OR",
+        "optionC": "NOT",
+        "optionD": "All of the above",
+        "correctoption": "D"
+    },
+    {
+        "questionNo": 28,
+        "question": "What is the purpose of the DROP command in SQL?",
+        "optionA": "To delete a table or database",
+        "optionB": "To delete rows from a table",
+        "optionC": "To modify the structure of a table",
+        "optionD": "To retrieve data from a table",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 29,
+        "question": "What is a candidate key in DBMS?",
+        "optionA": "A key that can uniquely identify a record",
+        "optionB": "A key used to link two tables",
+        "optionC": "A key that allows duplicate values",
+        "optionD": "A key used for encryption",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 30,
+        "question": "Which of the following is a valid SQL wildcard?",
+        "optionA": "%",
+        "optionB": "_",
+        "optionC": "*",
+        "optionD": "Both A and B",
+        "correctoption": "D"
+    },
+    {
+        "questionNo": 31,
+        "question": "What is the purpose of the LIKE operator in SQL?",
+        "optionA": "To search for a specified pattern in a column",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 32,
+        "question": "What is a surrogate key in DBMS?",
+        "optionA": "A system-generated unique identifier",
+        "optionB": "A key used to link two tables",
+        "optionC": "A key that allows duplicate values",
+        "optionD": "A key used for encryption",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 33,
+        "question": "Which of the following is a valid SQL clause?",
+        "optionA": "WHERE",
+        "optionB": "GROUP BY",
+        "optionC": "ORDER BY",
+        "optionD": "All of the above",
+        "correctoption": "D"
+    },
+    {
+        "questionNo": 34,
+        "question": "What is the purpose of the ROLLBACK command in SQL?",
+        "optionA": "To undo changes made by a transaction",
+        "optionB": "To save changes made by a transaction",
+        "optionC": "To delete rows from a table",
+        "optionD": "To retrieve data from a table",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 35,
+        "question": "What is the purpose of the COMMIT command in SQL?",
+        "optionA": "To save changes made by a transaction",
+        "optionB": "To undo changes made by a transaction",
+        "optionC": "To delete rows from a table",
+        "optionD": "To retrieve data from a table",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 36,
+        "question": "Which of the following is a valid SQL set operation?",
+        "optionA": "UNION",
+        "optionB": "INTERSECT",
+        "optionC": "EXCEPT",
+        "optionD": "All of the above",
+        "correctoption": "D"
+    },
+    {
+        "questionNo": 37,
+        "question": "What is the purpose of the EXISTS operator in SQL?",
+        "optionA": "To check if a subquery returns any rows",
+        "optionB": "To filter rows based on a condition",
+        "optionC": "To sort the result set",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 38,
+        "question": "What is the purpose of the CASE statement in SQL?",
+        "optionA": "To provide conditional logic in a query",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 39,
+        "question": "What is the purpose of the COALESCE function in SQL?",
+        "optionA": "To return the first non-null value in a list",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 40,
+        "question": "What is the purpose of the NULLIF function in SQL?",
+        "optionA": "To return NULL if two expressions are equal",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 41,
+        "question": "What is the purpose of the ISNULL function in SQL?",
+        "optionA": "To replace NULL with a specified value",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 42,
+        "question": "What is the purpose of the NVL function in SQL?",
+        "optionA": "To replace NULL with a specified value",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 43,
+        "question": "What is the purpose of the TO_DATE function in SQL?",
+        "optionA": "To convert a string to a date",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 44,
+        "question": "What is the purpose of the TO_CHAR function in SQL?",
+        "optionA": "To convert a date to a string",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 45,
+        "question": "What is the purpose of the TO_NUMBER function in SQL?",
+        "optionA": "To convert a string to a number",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 46,
+        "question": "What is the purpose of the DECODE function in SQL?",
+        "optionA": "To provide conditional logic in a query",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 47,
+        "question": "What is the purpose of the ROW_NUMBER function in SQL?",
+        "optionA": "To assign a unique number to each row in a result set",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 48,
+        "question": "What is the purpose of the RANK function in SQL?",
+        "optionA": "To assign a rank to each row in a result set",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 49,
+        "question": "What is the purpose of the DENSE_RANK function in SQL?",
+        "optionA": "To assign a rank to each row in a result set without gaps",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 50,
+        "question": "What is the purpose of the NTILE function in SQL?",
+        "optionA": "To divide rows into a specified number of groups",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 51,
+        "question": "What is the purpose of the PARTITION BY clause in SQL?",
+        "optionA": "To divide the result set into partitions for window functions",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 52,
+        "question": "What is the purpose of the OVER clause in SQL?",
+        "optionA": "To define a window for window functions",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 53,
+        "question": "What is the purpose of the FETCH FIRST clause in SQL?",
+        "optionA": "To limit the number of rows returned by a query",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 54,
+        "question": "What is the purpose of the WITH TIES option in SQL?",
+        "optionA": "To include rows that match the last row in the result set",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 55,
+        "question": "What is the purpose of the MERGE statement in SQL?",
+        "optionA": "To perform insert, update, or delete operations in a single statement",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 56,
+        "question": "What is the purpose of the CTE (Common Table Expression) in SQL?",
+        "optionA": "To create a temporary result set for use in a query",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 57,
+        "question": "What is the purpose of the RECURSIVE CTE in SQL?",
+        "optionA": "To perform recursive queries",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 58,
+        "question": "What is the purpose of the PIVOT operator in SQL?",
+        "optionA": "To transform rows into columns",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 59,
+        "question": "What is the purpose of the UNPIVOT operator in SQL?",
+        "optionA": "To transform columns into rows",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 60,
+        "question": "What is the purpose of the JSON_VALUE function in SQL?",
+        "optionA": "To extract a value from a JSON string",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 61,
+        "question": "What is the purpose of the JSON_QUERY function in SQL?",
+        "optionA": "To extract a JSON object or array from a JSON string",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 62,
+        "question": "What is the purpose of the JSON_MODIFY function in SQL?",
+        "optionA": "To update a value in a JSON string",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 63,
+        "question": "What is the purpose of the FOR JSON clause in SQL?",
+        "optionA": "To format query results as JSON",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 64,
+        "question": "What is the purpose of the FOR XML clause in SQL?",
+        "optionA": "To format query results as XML",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 65,
+        "question": "What is the purpose of the CROSS APPLY operator in SQL?",
+        "optionA": "To join a table with a table-valued function",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 66,
+        "question": "What is the purpose of the OUTER APPLY operator in SQL?",
+        "optionA": "To join a table with a table-valued function, including unmatched rows",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 67,
+        "question": "What is the purpose of the STRING_AGG function in SQL?",
+        "optionA": "To concatenate values from multiple rows into a single string",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 68,
+        "question": "What is the purpose of the FORMAT function in SQL?",
+        "optionA": "To format a value as a string",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 69,
+        "question": "What is the purpose of the TRY_CAST function in SQL?",
+        "optionA": "To attempt to convert a value to a specified data type",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 70,
+        "question": "What is the purpose of the TRY_CONVERT function in SQL?",
+        "optionA": "To attempt to convert a value to a specified data type",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 71,
+        "question": "What is the purpose of the CAST function in SQL?",
+        "optionA": "To convert a value from one data type to another",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 72,
+        "question": "What is the purpose of the ISNUMERIC function in SQL?",
+        "optionA": "To check if a value is numeric",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 73,
+        "question": "What is the purpose of the LEN function in SQL?",
+        "optionA": "To return the length of a string",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 74,
+        "question": "What is the purpose of the CHARINDEX function in SQL?",
+        "optionA": "To find the position of a substring in a string",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 75,
+        "question": "What is the purpose of the SUBSTRING function in SQL?",
+        "optionA": "To extract a portion of a string",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 76,
+        "question": "What is the purpose of the REPLACE function in SQL?",
+        "optionA": "To replace occurrences of a substring with another substring",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 77,
+        "question": "What is the purpose of the CONCAT function in SQL?",
+        "optionA": "To concatenate two or more strings",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 78,
+        "question": "What is the purpose of the TRIM function in SQL?",
+        "optionA": "To remove leading and trailing spaces from a string",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 79,
+        "question": "What is the purpose of the ROUND function in SQL?",
+        "optionA": "To round a numeric value to a specified number of decimal places",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 80,
+        "question": "What is the purpose of the CEILING function in SQL?",
+        "optionA": "To return the smallest integer greater than or equal to a number",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 81,
+        "question": "What is the purpose of the FLOOR function in SQL?",
+        "optionA": "To return the largest integer less than or equal to a number",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 82,
+        "question": "What is the purpose of the POWER function in SQL?",
+        "optionA": "To raise a number to the power of another number",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 83,
+        "question": "What is the purpose of the SQRT function in SQL?",
+        "optionA": "To return the square root of a number",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 84,
+        "question": "What is the purpose of the ABS function in SQL?",
+        "optionA": "To return the absolute value of a number",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 85,
+        "question": "What is the purpose of the GETDATE function in SQL?",
+        "optionA": "To return the current date and time",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 86,
+        "question": "What is the purpose of the DATEADD function in SQL?",
+        "optionA": "To add a specified time interval to a date",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 87,
+        "question": "What is the purpose of the DATEDIFF function in SQL?",
+        "optionA": "To calculate the difference between two dates",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 88,
+        "question": "What is the purpose of the DATENAME function in SQL?",
+        "optionA": "To return a part of a date as a string",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 89,
+        "question": "What is the purpose of the DATEPART function in SQL?",
+        "optionA": "To return a part of a date as an integer",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 90,
+        "question": "What is the purpose of the NEWID function in SQL?",
+        "optionA": "To generate a unique identifier",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 91,
+        "question": "What is the purpose of the ROWCOUNT function in SQL?",
+        "optionA": "To limit the number of rows affected by a query",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 92,
+        "question": "What is the purpose of the IDENTITY function in SQL?",
+        "optionA": "To create an auto-incrementing column",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 93,
+        "question": "What is the purpose of the SCOPE_IDENTITY function in SQL?",
+        "optionA": "To return the last identity value generated in the current scope",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 94,
+        "question": "What is the purpose of the @@IDENTITY function in SQL?",
+        "optionA": "To return the last identity value generated in the current session",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 95,
+        "question": "What is the purpose of the @@ROWCOUNT function in SQL?",
+        "optionA": "To return the number of rows affected by the last statement",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 96,
+        "question": "What is the purpose of the @@ERROR function in SQL?",
+        "optionA": "To return the error code of the last statement",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 97,
+        "question": "What is the purpose of the @@TRANCOUNT function in SQL?",
+        "optionA": "To return the number of active transactions",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 98,
+        "question": "What is the purpose of the @@VERSION function in SQL?",
+        "optionA": "To return the SQL Server version information",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 99,
+        "question": "What is the purpose of the @@SERVERNAME function in SQL?",
+        "optionA": "To return the name of the server",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    },
+    {
+        "questionNo": 100,
+        "question": "What is the purpose of the @@SPID function in SQL?",
+        "optionA": "To return the session ID of the current user process",
+        "optionB": "To sort the result set",
+        "optionC": "To filter rows based on a condition",
+        "optionD": "To combine rows from multiple tables",
+        "correctoption": "A"
+    }
+]

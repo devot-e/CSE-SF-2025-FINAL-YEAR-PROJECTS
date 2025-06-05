@@ -1,0 +1,902 @@
+[
+    {
+      "questionNo": 1,
+      "question": "Which of the following is NOT a part of the Chomsky hierarchy?",
+      "optionA": "Regular languages",
+      "optionB": "Context-free languages",
+      "optionC": "Context-sensitive languages",
+      "optionD": "Deterministic languages",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 2,
+      "question": "A language is regular if and only if it can be accepted by:",
+      "optionA": "Pushdown automaton",
+      "optionB": "Turing machine",
+      "optionC": "Finite automaton",
+      "optionD": "Linear bounded automaton",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 3,
+      "question": "The pumping lemma is used to prove that:",
+      "optionA": "A language is regular",
+      "optionB": "A language is not regular",
+      "optionC": "A language is context-free",
+      "optionD": "A language is decidable",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 4,
+      "question": "Which of the following problems is undecidable?",
+      "optionA": "Membership problem for regular languages",
+      "optionB": "Membership problem for context-free languages",
+      "optionC": "Halting problem for Turing machines",
+      "optionD": "Equivalence problem for finite automata",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 5,
+      "question": "A grammar where all productions are of the form A → aB or A → a is called:",
+      "optionA": "Context-free grammar",
+      "optionB": "Regular grammar",
+      "optionC": "Context-sensitive grammar",
+      "optionD": "Unrestricted grammar",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 6,
+      "question": "Which automaton has the most computational power?",
+      "optionA": "Finite automaton",
+      "optionB": "Pushdown automaton",
+      "optionC": "Turing machine",
+      "optionD": "Linear bounded automaton",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 7,
+      "question": "The language {aⁿbⁿ | n ≥ 0} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free but not regular",
+      "optionC": "Context-sensitive but not context-free",
+      "optionD": "Recursively enumerable but not context-sensitive",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 8,
+      "question": "Which of the following is closed under complementation?",
+      "optionA": "Regular languages",
+      "optionB": "Context-free languages",
+      "optionC": "Recursively enumerable languages",
+      "optionD": "All of the above",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 9,
+      "question": "A problem is said to be NP-complete if:",
+      "optionA": "It is in P",
+      "optionB": "It is in NP and all NP problems reduce to it",
+      "optionC": "It is undecidable",
+      "optionD": "It is context-free",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 10,
+      "question": "The class of languages accepted by deterministic pushdown automata is:",
+      "optionA": "Same as non-deterministic pushdown automata",
+      "optionB": "Proper subset of languages accepted by non-deterministic pushdown automata",
+      "optionC": "Proper superset of languages accepted by non-deterministic pushdown automata",
+      "optionD": "Unrelated to languages accepted by non-deterministic pushdown automata",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 11,
+      "question": "Which of the following is a regular expression for all strings over {0,1} with an even number of 0's?",
+      "optionA": "1*(01*01*)*",
+      "optionB": "(0+1)*00(0+1)*",
+      "optionC": "(1*01*0)*1*",
+      "optionD": "Both A and C",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 12,
+      "question": "A language L is recursive if:",
+      "optionA": "There exists a Turing machine that accepts L",
+      "optionB": "There exists a Turing machine that halts on all inputs and accepts L",
+      "optionC": "There exists a finite automaton that accepts L",
+      "optionD": "There exists a pushdown automaton that accepts L",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 13,
+      "question": "The minimum number of states required to accept the language L = {w | w ∈ {0,1}* and w ends with 00} is:",
+      "optionA": "2",
+      "optionB": "3",
+      "optionC": "4",
+      "optionD": "5",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 14,
+      "question": "Which of the following statements about regular languages is FALSE?",
+      "optionA": "They are closed under union",
+      "optionB": "They are closed under intersection",
+      "optionC": "They are closed under complementation",
+      "optionD": "They are closed under Kleene star",
+      "correctoption": "None"
+    },
+    {
+      "questionNo": 15,
+      "question": "The language {ww | w ∈ {0,1}*} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 16,
+      "question": "Which of the following is true about NP problems?",
+      "optionA": "All NP problems are decidable",
+      "optionB": "All NP problems are polynomial time solvable",
+      "optionC": "If any NP-complete problem is in P, then P=NP",
+      "optionD": "All NP problems are undecidable",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 17,
+      "question": "The Church-Turing thesis states that:",
+      "optionA": "All computable functions are recursive",
+      "optionB": "Any computation that can be carried out by mechanical means can be performed by a Turing machine",
+      "optionC": "The halting problem is undecidable",
+      "optionD": "P ≠ NP",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 18,
+      "question": "Which of the following is not a normal form in context-free grammars?",
+      "optionA": "Chomsky normal form",
+      "optionB": "Greibach normal form",
+      "optionC": "Kuroda normal form",
+      "optionD": "Backus-Naur form",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 19,
+      "question": "The language {aⁿbⁿcⁿ | n ≥ 1} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Recursively enumerable but not context-sensitive",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 20,
+      "question": "A deterministic finite automaton (DFA) must have:",
+      "optionA": "At least one accepting state",
+      "optionB": "A transition for every state and input symbol",
+      "optionC": "Non-deterministic transitions",
+      "optionD": "A stack",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 21,
+      "question": "Which of the following is true about recursive languages?",
+      "optionA": "They are closed under union",
+      "optionB": "They are closed under intersection",
+      "optionC": "They are closed under complementation",
+      "optionD": "All of the above",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 22,
+      "question": "The problem of determining if two context-free grammars generate the same language is:",
+      "optionA": "Decidable",
+      "optionB": "Undecidable",
+      "optionC": "NP-complete",
+      "optionD": "Regular",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 23,
+      "question": "Which of the following is not a primitive recursive function?",
+      "optionA": "Addition",
+      "optionB": "Multiplication",
+      "optionC": "Ackermann function",
+      "optionD": "Factorial",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 24,
+      "question": "A language is context-free if and only if it can be accepted by:",
+      "optionA": "Finite automaton",
+      "optionB": "Pushdown automaton",
+      "optionC": "Turing machine",
+      "optionD": "Linear bounded automaton",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 25,
+      "question": "The Myhill-Nerode theorem is used to:",
+      "optionA": "Prove a language is regular",
+      "optionB": "Prove a language is not regular",
+      "optionC": "Minimize a DFA",
+      "optionD": "All of the above",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 26,
+      "question": "Which of the following is not a component of a Turing machine?",
+      "optionA": "Finite control",
+      "optionB": "Input tape",
+      "optionC": "Stack",
+      "optionD": "Read/write head",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 27,
+      "question": "The language {aᵖ | p is prime} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 28,
+      "question": "Which of the following problems is decidable?",
+      "optionA": "Halting problem",
+      "optionB": "Post correspondence problem",
+      "optionC": "Membership problem for context-free languages",
+      "optionD": "Equivalence problem for Turing machines",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 29,
+      "question": "A universal Turing machine can:",
+      "optionA": "Solve any computable problem",
+      "optionB": "Simulate any other Turing machine",
+      "optionC": "Accept all recursively enumerable languages",
+      "optionD": "All of the above",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 30,
+      "question": "The class P contains problems that are:",
+      "optionA": "Solvable in polynomial time by a deterministic Turing machine",
+      "optionB": "Solvable in polynomial time by a non-deterministic Turing machine",
+      "optionC": "Solvable in exponential time",
+      "optionD": "Undecidable",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 31,
+      "question": "Which of the following is true about recursively enumerable languages?",
+      "optionA": "They are closed under union",
+      "optionB": "They are closed under intersection",
+      "optionC": "They are not closed under complementation",
+      "optionD": "All of the above",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 32,
+      "question": "The pumping lemma for context-free languages is used to:",
+      "optionA": "Prove a language is context-free",
+      "optionB": "Prove a language is not context-free",
+      "optionC": "Construct a pushdown automaton",
+      "optionD": "Convert to Chomsky normal form",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 33,
+      "question": "Which of the following is not a property of regular languages?",
+      "optionA": "They can be accepted by finite automata",
+      "optionB": "They can be generated by regular grammars",
+      "optionC": "They can be parsed by pushdown automata",
+      "optionD": "They can be described by regular expressions",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 34,
+      "question": "A language is context-sensitive if and only if it can be accepted by:",
+      "optionA": "Finite automaton",
+      "optionB": "Pushdown automaton",
+      "optionC": "Linear bounded automaton",
+      "optionD": "Turing machine",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 35,
+      "question": "Which of the following is not a type of grammar in the Chomsky hierarchy?",
+      "optionA": "Type 0",
+      "optionB": "Type 1",
+      "optionC": "Type 2",
+      "optionD": "Type 4",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 36,
+      "question": "The minimum number of states in a DFA that accepts all strings over {0,1} with the number of 0's divisible by 3 is:",
+      "optionA": "2",
+      "optionB": "3",
+      "optionC": "4",
+      "optionD": "5",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 37,
+      "question": "Which of the following is true about non-deterministic finite automata (NFA)?",
+      "optionA": "They are less powerful than DFA",
+      "optionB": "They can be converted to equivalent DFA",
+      "optionC": "They cannot accept all regular languages",
+      "optionD": "They require more states than DFA for the same language",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 38,
+      "question": "The language {0ⁿ1ⁿ0ⁿ | n ≥ 1} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Recursively enumerable but not context-sensitive",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 39,
+      "question": "Which of the following is not a component of a pushdown automaton?",
+      "optionA": "Finite control",
+      "optionB": "Input tape",
+      "optionC": "Stack",
+      "optionD": "Queue",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 40,
+      "question": "The class NP contains problems that are:",
+      "optionA": "Solvable in polynomial time by a deterministic Turing machine",
+      "optionB": "Solvable in polynomial time by a non-deterministic Turing machine",
+      "optionC": "Solvable in exponential time",
+      "optionD": "Undecidable",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 41,
+      "question": "Which of the following is not a regular language?",
+      "optionA": "All strings over {a,b} with even length",
+      "optionB": "All strings over {a,b} containing 'aa' as substring",
+      "optionC": "All strings over {a,b} with equal number of a's and b's",
+      "optionD": "All strings over {a,b} ending with 'ab'",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 42,
+      "question": "The Rice's theorem states that:",
+      "optionA": "All non-trivial properties of recursively enumerable languages are undecidable",
+      "optionB": "P = NP",
+      "optionC": "Every regular language is context-free",
+      "optionD": "The halting problem is decidable",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 43,
+      "question": "Which of the following is true about finite automata?",
+      "optionA": "DFA and NFA have equal power",
+      "optionB": "NFA can recognize more languages than DFA",
+      "optionC": "DFA requires more states than NFA for the same language",
+      "optionD": "NFA cannot have ε-transitions",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 44,
+      "question": "The language {aⁿbᵐcⁿ⁺ᵐ | n,m ≥ 1} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 45,
+      "question": "Which of the following is not a closure property of context-free languages?",
+      "optionA": "Union",
+      "optionB": "Concatenation",
+      "optionC": "Intersection",
+      "optionD": "Kleene star",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 46,
+      "question": "The minimum number of states in a DFA that accepts all strings over {0,1} with the number of 1's congruent to 2 modulo 3 is:",
+      "optionA": "2",
+      "optionB": "3",
+      "optionC": "4",
+      "optionD": "5",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 47,
+      "question": "Which of the following is not a normal form for context-free grammars?",
+      "optionA": "Chomsky normal form",
+      "optionB": "Greibach normal form",
+      "optionC": "Backus-Naur form",
+      "optionD": "Kuroda normal form",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 48,
+      "question": "The language {wwᴿ | w ∈ {0,1}*} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 49,
+      "question": "Which of the following is true about the halting problem?",
+      "optionA": "It is decidable",
+      "optionB": "It is semi-decidable",
+      "optionC": "It is NP-complete",
+      "optionD": "It is regular",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 50,
+      "question": "The class of languages accepted by deterministic pushdown automata is called:",
+      "optionA": "Regular languages",
+      "optionB": "Deterministic context-free languages",
+      "optionC": "Context-sensitive languages",
+      "optionD": "Recursively enumerable languages",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 51,
+      "question": "Which of the following is not a feature of a Turing machine compared to finite automata?",
+      "optionA": "Infinite tape",
+      "optionB": "Read/write capability",
+      "optionC": "Ability to move left and right",
+      "optionD": "Finite number of states",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 52,
+      "question": "The language {aⁿbⁿcᵐ | n,m ≥ 1} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 53,
+      "question": "Which of the following is not a way to describe regular languages?",
+      "optionA": "Regular expressions",
+      "optionB": "Finite automata",
+      "optionC": "Regular grammars",
+      "optionD": "Context-free grammars",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 54,
+      "question": "The Post Correspondence Problem is:",
+      "optionA": "Decidable",
+      "optionB": "Undecidable",
+      "optionC": "NP-complete",
+      "optionD": "Regular",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 55,
+      "question": "Which of the following is true about the relationship between P and NP?",
+      "optionA": "P is a subset of NP",
+      "optionB": "NP is a subset of P",
+      "optionC": "P = NP",
+      "optionD": "It is not known whether P = NP",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 56,
+      "question": "The language {aⁿbᵐcⁿᵐ | n,m ≥ 1} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-sensitive",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 57,
+      "question": "Which of the following is not a type of Turing machine?",
+      "optionA": "Deterministic",
+      "optionB": "Non-deterministic",
+      "optionC": "Multi-tape",
+      "optionD": "Finite",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 58,
+      "question": "The minimum number of states in a DFA that accepts all strings over {0,1} that contain '010' as substring is:",
+      "optionA": "3",
+      "optionB": "4",
+      "optionC": "5",
+      "optionD": "6",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 59,
+      "question": "Which of the following is not a characteristic of regular languages?",
+      "optionA": "They can be pumped",
+      "optionB": "They have finite memory",
+      "optionC": "They can count",
+      "optionD": "They are closed under reversal",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 60,
+      "question": "The language {aⁿ | n is a perfect square} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 61,
+      "question": "Which of the following is true about linear bounded automata?",
+      "optionA": "They are more powerful than Turing machines",
+      "optionB": "They accept context-sensitive languages",
+      "optionC": "They have infinite tape",
+      "optionD": "They are less powerful than pushdown automata",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 62,
+      "question": "The language {aⁿbᵐ | n ≤ m ≤ 2n} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 63,
+      "question": "Which of the following is not a component of a formal language?",
+      "optionA": "Alphabet",
+      "optionB": "Strings",
+      "optionC": "Grammar",
+      "optionD": "Compiler",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 64,
+      "question": "The language {aⁿbᵐcᵖ | n = m or m = p} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 65,
+      "question": "Which of the following is not a method to prove a language is not regular?",
+      "optionA": "Pumping lemma",
+      "optionB": "Myhill-Nerode theorem",
+      "optionC": "Closure properties",
+      "optionD": "Kleene's theorem",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 66,
+      "question": "The language {aⁿbᵐ | n ≠ m} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 67,
+      "question": "Which of the following is true about deterministic context-free languages?",
+      "optionA": "They are closed under complementation",
+      "optionB": "They are closed under union",
+      "optionC": "They are closed under intersection",
+      "optionD": "They are not closed under any operation",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 68,
+      "question": "The language {aⁿbⁿcᵖ | n ≤ p} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 69,
+      "question": "Which of the following is not a characteristic of context-free grammars?",
+      "optionA": "They can have multiple derivations for the same string",
+      "optionB": "They can be ambiguous",
+      "optionC": "They always have unique parse trees",
+      "optionD": "They can be converted to Chomsky normal form",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 70,
+      "question": "The language {aⁿbᵐcⁿᵐ | n,m ≥ 1} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-sensitive",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 71,
+      "question": "Which of the following is true about the relationship between regular and context-free languages?",
+      "optionA": "All regular languages are context-free",
+      "optionB": "All context-free languages are regular",
+      "optionC": "Regular and context-free languages are disjoint sets",
+      "optionD": "There is no relationship between them",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 72,
+      "question": "The language {aⁿbᵐ | n ≥ m ≥ 0} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 73,
+      "question": "Which of the following is not a normal form for context-free grammars?",
+      "optionA": "Chomsky normal form",
+      "optionB": "Greibach normal form",
+      "optionC": "Backus-Naur form",
+      "optionD": "Kuroda normal form",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 74,
+      "question": "The language {aⁿbⁿcᵖdᵖ | n,p ≥ 1} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 75,
+      "question": "Which of the following is true about the class NP?",
+      "optionA": "It stands for 'non-polynomial'",
+      "optionB": "It contains problems verifiable in polynomial time",
+      "optionC": "It is equal to the class of decidable problems",
+      "optionD": "It is a subset of P",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 76,
+      "question": "The language {aⁿbᵐcⁿᵐ | n,m ≥ 1} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-sensitive",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 77,
+      "question": "Which of the following is not a closure property of regular languages?",
+      "optionA": "Union",
+      "optionB": "Concatenation",
+      "optionC": "Intersection",
+      "optionD": "Kleene star",
+      "correctoption": "None"
+    },
+    {
+      "questionNo": 78,
+      "question": "The language {aⁿbᵐ | n = 2m} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 79,
+      "question": "Which of the following is not a type of automaton?",
+      "optionA": "Finite automaton",
+      "optionB": "Pushdown automaton",
+      "optionC": "Turing machine",
+      "optionD": "Lambda automaton",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 80,
+      "question": "The language {aⁿbⁿcᵖ | n ≠ p} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 81,
+      "question": "Which of the following is true about the halting problem?",
+      "optionA": "It is decidable for Turing machines",
+      "optionB": "It is semi-decidable",
+      "optionC": "It is NP-complete",
+      "optionD": "It is context-free",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 82,
+      "question": "The language {aⁿbⁿaᵐbᵐ | n,m ≥ 1} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 83,
+      "question": "Which of the following is not a characteristic of pushdown automata?",
+      "optionA": "They have a stack",
+      "optionB": "They can recognize context-free languages",
+      "optionC": "They are more powerful than Turing machines",
+      "optionD": "They can be deterministic or non-deterministic",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 84,
+      "question": "The language {aⁿbᵐcⁿ⁺ᵐ | n,m ≥ 1} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 85,
+      "question": "Which of the following is true about the relationship between context-free and context-sensitive languages?",
+      "optionA": "All context-free languages are context-sensitive",
+      "optionB": "All context-sensitive languages are context-free",
+      "optionC": "Context-free and context-sensitive languages are disjoint sets",
+      "optionD": "There is no relationship between them",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 86,
+      "question": "The language {aⁿbᵐ | n ≥ m ≥ 0} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 87,
+      "question": "Which of the following is not a normal form for context-free grammars?",
+      "optionA": "Chomsky normal form",
+      "optionB": "Greibach normal form",
+      "optionC": "Backus-Naur form",
+      "optionD": "Kuroda normal form",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 88,
+      "question": "The language {aⁿbⁿcᵖdᵖ | n,p ≥ 1} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 89,
+      "question": "Which of the following is true about the class NP?",
+      "optionA": "It stands for 'non-polynomial'",
+      "optionB": "It contains problems verifiable in polynomial time",
+      "optionC": "It is equal to the class of decidable problems",
+      "optionD": "It is a subset of P",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 90,
+      "question": "The language {aⁿbᵐcⁿᵐ | n,m ≥ 1} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-sensitive",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 91,
+      "question": "Which of the following is not a closure property of regular languages?",
+      "optionA": "Union",
+      "optionB": "Concatenation",
+      "optionC": "Intersection",
+      "optionD": "Kleene star",
+      "correctoption": "None"
+    },
+    {
+      "questionNo": 92,
+      "question": "The language {aⁿbᵐ | n = 2m} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 93,
+      "question": "Which of the following is not a type of automaton?",
+      "optionA": "Finite automaton",
+      "optionB": "Pushdown automaton",
+      "optionC": "Turing machine",
+      "optionD": "Lambda automaton",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 94,
+      "question": "The language {aⁿbⁿcᵖ | n ≠ p} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 95,
+      "question": "Which of the following is true about the halting problem?",
+      "optionA": "It is decidable for Turing machines",
+      "optionB": "It is semi-decidable",
+      "optionC": "It is NP-complete",
+      "optionD": "It is context-free",
+      "correctoption": "B"
+    },
+    {
+      "questionNo": 96,
+      "question": "The language {aⁿbⁿaᵐbᵐ | n,m ≥ 1} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 97,
+      "question": "Which of the following is not a characteristic of pushdown automata?",
+      "optionA": "They have a stack",
+      "optionB": "They can recognize context-free languages",
+      "optionC": "They are more powerful than Turing machines",
+      "optionD": "They can be deterministic or non-deterministic",
+      "correctoption": "C"
+    },
+    {
+      "questionNo": 98,
+      "question": "The language {aⁿbᵐcⁿ⁺ᵐ | n,m ≥ 1} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "D"
+    },
+    {
+      "questionNo": 99,
+      "question": "Which of the following is true about the relationship between context-free and context-sensitive languages?",
+      "optionA": "All context-free languages are context-sensitive",
+      "optionB": "All context-sensitive languages are context-free",
+      "optionC": "Context-free and context-sensitive languages are disjoint sets",
+      "optionD": "There is no relationship between them",
+      "correctoption": "A"
+    },
+    {
+      "questionNo": 100,
+      "question": "The language {aⁿbᵐ | n ≥ m ≥ 0} is:",
+      "optionA": "Regular",
+      "optionB": "Context-free",
+      "optionC": "Context-sensitive",
+      "optionD": "Not context-free",
+      "correctoption": "B"
+    }
+  ]
