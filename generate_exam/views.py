@@ -57,7 +57,7 @@ def genQ(request):
         request.session['quiz_data'] = list_of_questions
         # request.session['total'] = total
         print(list_of_questions)
-        return render(request, 'quiz_template.html', {'quiz_data': list_of_questions, 'total': total})
+        return render(request, 'quiz_preview_template.html', {'quiz_data': list_of_questions, 'total': total})
 
     # GET request - just show the empty form
     return render(request, 'genQ.html')

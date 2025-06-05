@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from django.http import HttpResponse
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -8,7 +8,8 @@ from results.models import Exam, Result, Student
 from .models import ExamSession
 from .forms import ExamAccessForm
 import json
-
+from django.utils import timezone
+from .utility import generate_quiz_report
 def exam_entry(request):
     if request.method == 'POST':
         form = ExamAccessForm(request.POST)
@@ -49,6 +50,7 @@ def exam_interface(request, session_id):
     }
     return render(request, 'exam_conduct/exam_interface.html', context)
 
+'''
 @csrf_exempt
 def submit_exam(request, session_id):
     if request.method == 'POST':
@@ -89,6 +91,71 @@ def submit_exam(request, session_id):
             return JsonResponse({'status': 'error', 'message': 'Invalid data'}, status=400)
 
     return JsonResponse({'status': 'error', 'message': 'Invalid method'}, status=405)
+'''
+
+@csrf_exempt
+def submit_exam(request,session_id):
+    if request.method == 'POST':
+        # Get the original quiz data
+        session = get_object_or_404(ExamSession, session_id=session_id, student=request.user.student)
+        quiz_data = session.exam.quiz_questions;
+        # Check if quiz_data is empty
+        if not quiz_data:
+            return HttpResponse("<h1>No quiz data found.</h1>")
+
+        score = 0
+        results = []
+        q_num=1
+        for question in quiz_data:
+            # q_num = question['questionNo']
+            user_answer = request.POST.get(f'q{q_num}')
+            is_correct = (user_answer == question['correctoption'])
+
+            if is_correct:
+                score += 1
+
+            results.append({
+                'question': question['question'],
+                'user_answer': " " + quiz_data[q_num-1]['option' + user_answer] if user_answer else "NOT ANSWERED",
+                'correct_answer': " " + quiz_data[q_num-1]['option' + question['correctoption']],
+                'is_correct': is_correct,
+                'topic': question['topic']
+            })
+            q_num+=1
+
+        # Calculate percentage
+        percentage = (score / len(quiz_data)) * 100
+
+        # Generate report using the utility functions
+        report = generate_quiz_report(results)
+
+        # Prepare context with both raw results and processed report
+        context = {
+            'results': results,
+            'score': score,
+            'total': len(quiz_data),
+            'percentage': percentage,
+
+            # 'quiz_data': quiz_data,
+            'topics': report['topics'],
+            'accuracy': report['accuracy'],
+            'radar_chart': report['chart_image'],
+            # 'score': f"{report['correct_answers']}/{report['total_questions']}",
+            # 'percentage': (report['correct_answers'] / report['total_questions']) * 100,
+        }
+
+        Result.objects.create(
+            exam = session.exam,
+            student = session.student,
+            teacher = session.exam.teacher,
+            date = timezone.now().date(),
+            scores = dict(zip(context['topics'],context['accuracy'])),
+            quiz_results = context
+        )
+        return render(request, 'quiz_results.html', context)
+
+    return redirect('quiz')
+
 
 def calculate_score(quiz_data, answers):
     # Implement your scoring logic here

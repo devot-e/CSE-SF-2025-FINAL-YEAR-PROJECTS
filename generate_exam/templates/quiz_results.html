@@ -68,20 +68,20 @@
 <body>
     <div class="results-container">
         <h1>Quiz Results</h1>
-        
+
         <div class="score-summary">
             <h2>Your Score: {{ score }}/{{ total }}</h2>
             <h3>{{ percentage }}%</h3>
         </div>
-        
+
         <div class="performance-chart">
             <h2>Performance by Topic</h2>
             <div class="chart-container">
-                <img src="data:image/png;base64,{{ radar_chart }}" 
-                     alt="Performance by Topic" 
+                <img src="data:image/png;base64,{{ radar_chart }}"
+                     alt="Performance by Topic"
                      style="max-width: 100%; height: auto;">
             </div>
-            
+
             <div class="topic-breakdown">
                 <h3>Topic-wise Accuracy:</h3>
                 {% for topic, acc in topic_accuracy %}
@@ -92,13 +92,13 @@
                 {% endfor %}
             </div>
         </div>
-        
+
         {% for result in results %}
         <div class="result-item {% if result.is_correct %}correct{% else %}incorrect{% endif %}">
             <h3>Question {{ forloop.counter }}</h3>
             <p>{{ result.question }}</p>
             <p>Topic: <strong>{{ result.topic|cut:"questions/"|cut:".json" }}</strong></p>
-            
+
             {% if result.is_correct %}
                 <p>Your answer: <span class="correct-answer">{{ result.user_answer }} </span> (Correct)</p>
             {% else %}
@@ -107,10 +107,10 @@
             {% endif %}
         </div>
         {% endfor %}
-        
-        <div style="text-align: center; margin-top: 30px;">
+
+        <!-- <div style="text-align: center; margin-top: 30px;">
             <a href="{% url 'genQ' %}" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 4px;">Take Quiz Again</a>
-        </div>
+        </div> -->
     </div>
 </body>
 </html>

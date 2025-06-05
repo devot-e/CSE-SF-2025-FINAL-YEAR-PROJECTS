@@ -123,7 +123,7 @@
       "optionB": "They are closed under intersection",
       "optionC": "They are closed under complementation",
       "optionD": "They are closed under Kleene star",
-      "correctoption": "None"
+      "correctoption": "B"
     },
     {
       "questionNo": 15,
@@ -690,7 +690,7 @@
       "optionB": "Concatenation",
       "optionC": "Intersection",
       "optionD": "Kleene star",
-      "correctoption": "None"
+      "correctoption": "C"
     },
     {
       "questionNo": 78,
@@ -816,7 +816,7 @@
       "optionB": "Concatenation",
       "optionC": "Intersection",
       "optionD": "Kleene star",
-      "correctoption": "None"
+      "correctoption": "C"
     },
     {
       "questionNo": 92,

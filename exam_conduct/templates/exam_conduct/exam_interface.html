@@ -107,34 +107,32 @@
         Question <span id="current-question">1</span> of {{ questions|length }}
     </div>
 
-    <form id="exam-form">
+    <form id="exam-form" action="{% url 'exam_conduct:submit_exam' session_id=session_id %}" method="post">
         {% for question in questions %}
         <div class="question-card" id="question-{{ forloop.counter }}" {% if not forloop.first %}style="display:none"{% endif %}>
-            <div class="question-text">{{ question.question }}</div>
+            <div class="question">
+                <div class="question-number">Question {{ forloop.counter }}</div>
+                <div class="question-text">{{ question.question }}</div>
 
-            <input type="radio" name="q{{ question.questionNo }}" id="q{{ question.questionNo }}_a"
-                   class="option-radio" value="A">
-            <label for="q{{ question.questionNo }}_a" class="option-label">
-                <strong>A)</strong> {{ question.optionA }}
-            </label>
-
-            <input type="radio" name="q{{ question.questionNo }}" id="q{{ question.questionNo }}_b"
-                   class="option-radio" value="B">
-            <label for="q{{ question.questionNo }}_b" class="option-label">
-                <strong>B)</strong> {{ question.optionB }}
-            </label>
-
-            <input type="radio" name="q{{ question.questionNo }}" id="q{{ question.questionNo }}_c"
-                   class="option-radio" value="C">
-            <label for="q{{ question.questionNo }}_c" class="option-label">
-                <strong>C)</strong> {{ question.optionC }}
-            </label>
-
-            <input type="radio" name="q{{ question.questionNo }}" id="q{{ question.questionNo }}_d"
-                   class="option-radio" value="D">
-            <label for="q{{ question.questionNo }}_d" class="option-label">
-                <strong>D)</strong> {{ question.optionD }}
-            </label>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q{{ forloop.counter }}" id="q{{ forloop.counter }}_a" value="A">
+                        <label for="q{{ forloop.counter }}_a">A) {{ question.optionA }}</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q{{ forloop.counter }}" id="q{{ forloop.counter }}_b" value="B">
+                        <label for="q{{ forloop.counter }}_b">B) {{ question.optionB }}</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q{{ forloop.counter }}" id="q{{ forloop.counter }}_c" value="C">
+                        <label for="q{{ forloop.counter }}_c">C) {{ question.optionC }}</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q{{ forloop.counter }}" id="q{{ forloop.counter }}_d" value="D">
+                        <label for="q{{ forloop.counter }}_d">D) {{ question.optionD }}</label>
+                    </div>
+                </div>
+            </div>
         </div>
         {% endfor %}
 
@@ -147,7 +145,7 @@
                 Next <i class="fas fa-arrow-right"></i>
             </button>
 
-            <button type="button" id="submit-btn" class="btn btn-danger" style="display:none">
+            <button type="submit" id="submit-btn" class="btn btn-danger" style="display:none">
                 <i class="fas fa-paper-plane"></i> Submit Exam
             </button>
         </div>
@@ -209,31 +207,31 @@
         }
     });
 
-    submitBtn.addEventListener('click', submitExam);
+    // submitBtn.addEventListener('click', submitExam);
 
-    // Submit exam function
-    function submitExam() {
-        const answers = [];
-        document.querySelectorAll('.option-radio:checked').forEach(radio => {
-            // const questionNo = radio.name.substring(1); // Remove 'q' prefix
-            answers.push( radio.value);
-        });
+    // // Submit exam function
+    // function submitExam() {
+    //     const answers = [];
+    //     document.querySelectorAll('.option-radio:checked').forEach(radio => {
+    //         // const questionNo = radio.name.substring(1); // Remove 'q' prefix
+    //         answers.push( radio.value);
+    //     });
 
-        fetch(`/exam/session/{{ session_id }}/submit/`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-CSRFToken': '{{ csrf_token }}',
-            },
-            body: JSON.stringify({answers: answers})
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.status === 'success') {
-                window.location.href = '/exam-complete/';
-            }
-        });
-    }
+    //     fetch(`/exam/session/{{ session_id }}/submit/`, {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //             'X-CSRFToken': '{{ csrf_token }}',
+    //         },
+    //         body: JSON.stringify({answers: answers})
+    //     })
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         if (data.status === 'success') {
+    //             window.location.href = '/exam-complete/';
+    //         }
+    //     });
+    // }
 
     // Proctoring functionality
     document.addEventListener('fullscreenchange', checkFullscreen);
