@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'user_accounts',
     'generate_exam',
     'exam_conduct',
+    'ExamAnalysis',
+    'chartjs',
 ]
 
 MIDDLEWARE = [

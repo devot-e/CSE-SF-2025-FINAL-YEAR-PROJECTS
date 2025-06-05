@@ -27,5 +27,6 @@ urlpatterns = [
     path('delete_exam/<str:exam_id>/', delete_exam, name='delete_exam'),
     path('', lambda request: redirect('login')),
     path('exam/', include('exam_conduct.urls')),
+    path('analysis/',include('ExamAnalysis.urls'))
     # path('', include('user_accounts.urls')),  # This will make the login page the default landing page
 ]
