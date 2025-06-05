@@ -60,7 +60,7 @@ def submit_exam(request, session_id):
             answers = data.get('answers', {})
             print(answers,'--------------')
             # Calculate score (implement your own scoring logic)
-            score = 0#calculate_score(exam.quiz_questions, answers)
+            score = calculate_score(exam.quiz_questions, answers)
 
             # Save result
             Result.objects.create(
