@@ -1,0 +1,28 @@
+format of result.quiz_results
+
+{'score': 6,
+'total': 10,
+'topics': ['CN', 'DBMS', 'DSA', 'OS', 'TOC'], '
+results':
+    [
+    {'topic': 'questions/CN.json',
+    'question': 'What is the maximum length of a MAC address?',
+    'is_correct': False,
+    'user_answer': ' 128 bits',
+    'correct_answer': ' 48 bits'
+    },
+    {'topic': 'questions/CN.json', 'question': 'What is the default port number for HTTP?', 'is_correct': True, 'user_answer': ' 80', 'correct_answer': ' 80'},
+    {'topic': 'questions/DBMS.json', 'question': 'What is the purpose of the WITH TIES option in SQL?', 'is_correct': True, 'user_answer': ' To include rows that match the last row in the result set', 'correct_answer': ' To include rows that match the last row in the result set'},
+    {'topic': 'questions/DSA.json', 'question': 'Which of the following is NOT a string matching algorithm?', 'is_correct': True, 'user_answer': ' Floyd-Warshall', 'correct_answer': ' Floyd-Warshall'},
+    {'topic': 'questions/OS.json', 'question': 'Which of these is not a common UNIX filter?', 'is_correct': True, 'user_answer': ' mv', 'correct_answer': ' mv'},
+    {'topic': 'questions/OS.json', 'question': "What is the purpose of the 'useradd' command?", 'is_correct': True, 'user_answer': ' Add user', 'correct_answer': ' Add user'},
+    {'topic': 'questions/TOC.json', 'question': 'The language {aⁿbⁿcⁿ | n ≥ 1} is:', 'is_correct': False, 'user_answer': ' Recursively enumerable but not context-sensitive', 'correct_answer': ' Context-sensitive'},
+    {'topic': 'questions/TOC.json', 'question': 'The language {aⁿbⁿaᵐbᵐ | n,m ≥ 1} is:', 'is_correct': False, 'user_answer': ' Context-free', 'correct_answer': ' Not context-free'},
+    {'topic': 'questions/TOC.json', 'question': 'Which of the following is not a normal form in context-free grammars?', 'is_correct': True, 'user_answer': ' Backus-Naur form', 'correct_answer': ' Backus-Naur form'},
+    {'topic': 'questions/TOC.json', 'question': 'Which of the following is true about deterministic context-free languages?', 'is_correct': False, 'user_answer': ' They are not closed under any operation', 'correct_answer': ' They are closed under complementation'}],
+'accuracy': [50.0, 100.0, 100.0, 100.0, 25.0, 50.0],
+'percentage': 60.0, 'radar_chart': 'image_object'
+}
+
+
+format of exam.quiz_questions
