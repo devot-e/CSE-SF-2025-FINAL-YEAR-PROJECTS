@@ -131,7 +131,7 @@ def submit_exam(request,session_id):
 
         # Prepare context with both raw results and processed report
         context = {
-            'results': results,
+            'results': results, #list of dict of metadata of qustion
             'score': score,
             'total': len(quiz_data),
             'percentage': percentage,
