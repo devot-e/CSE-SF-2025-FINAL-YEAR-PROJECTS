@@ -119,7 +119,6 @@ def bulk_upload(request):
         if form.is_valid():
             file = request.FILES['file']
             user_type = form.cleaned_data['user_type']
-
             try:
                 # Read the Excel file
                 df = pd.read_excel(file)
@@ -128,6 +127,7 @@ def bulk_upload(request):
 
                 for _, row in df.iterrows():
                     try:
+                        print(row)
                         # Create User
                         user = User.objects.create_user(
                             username=row['username'],
@@ -139,20 +139,21 @@ def bulk_upload(request):
                             Teacher.objects.create(
                                 user=user,
                                 name=row['name'],
-                                teacher_id=row['teacher_id'],
+                                # teacher_id=row['teacher_id'],
                                 email=row['email'],
                                 phone=row['phone']
-                            )
+                            ).save()
                         else:
                             Student.objects.create(
                                 user=user,
                                 name=row['name'],
-                                student_id=row['student_id'],
+                                # student_id=row['student_id'],
                                 email=row['email'],
                                 phone=row['phone']
-                            )
+                            ).save()
                         success_count += 1
                     except Exception as e:
+                        print(e)
                         error_count += 1
                         continue
 
