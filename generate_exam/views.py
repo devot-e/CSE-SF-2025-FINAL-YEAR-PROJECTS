@@ -11,6 +11,8 @@ from django.http import HttpResponse,HttpResponseNotFound
 from django.utils import timezone
 # Create your views here.
 
+from .fetch_questions import generate_all_questions
+
 @csrf_exempt
 @login_required
 @user_passes_test(is_teacher)
@@ -21,43 +23,53 @@ def genQ(request):
     print(f"User: {request.user}")
     if request.method == 'POST':
         # Process form submission
+        topic=[]
         values = []
         total = 0
         # Get all five values from the form
         for i in range(1, 6):
             field_name = f'value{i}'
+            t=f'topic{i}'
             value = int(request.POST.get(field_name, 0))
+            topic.append(request.POST.get(t, ''))
+            print(topic)
             values.append(value)
             total += value
         # print(values)
         index_of_questions = []
-        x=["CN","DBMS","DSA","OS","TOC"]
-        for i in range(5):
-            x[i]="questions/"+x[i]+".json"
-            # x[i]=os.path.join(settings.BASE_DIR,x[i])
-            # print(os.path.join(settings.BASE_DIR,x[i]))
-        for i in range(5):
-            index_of_questions.append(random.sample(range(100), values[i]))
-        list_of_questions = []
-        for i in range(5):
-            file_path = os.path.join(settings.BASE_DIR, x[i])
-            with open(file_path) as f:
-                data = json.load(f)
-            for j in index_of_questions[i]:
-                # print(data[j])
-                dict = data[j]
-                dict['topic']=x[i]
-                list_of_questions.append(dict)
+        x=["computer Network","DBMS","DSA","operating system","Theory of Computation"]
+        promt=dict(zip(topic,values))
+
+        list_of_questions=generate_all_questions(promt)
+        new_list = [{k.lower(): v for k, v in item.items()} for item in list_of_questions]
+        print(new_list)
+
+        # for i in range(5):
+        #     x[i]="questions/"+x[i]+".json"
+        #     # x[i]=os.path.join(settings.BASE_DIR,x[i])
+        #     # print(os.path.join(settings.BASE_DIR,x[i]))
+        # for i in range(5):
+        #     index_of_questions.append(random.sample(range(100), values[i]))
+        # list_of_questions = []
+        # for i in range(5):
+        #     file_path = os.path.join(settings.BASE_DIR, x[i])
+        #     with open(file_path) as f:
+        #         data = json.load(f)
+        #     for j in index_of_questions[i]:
+        #         # print(data[j])
+        #         dict = data[j]
+        #         dict['topic']=x[i]
+        #         list_of_questions.append(dict)
         # print(list_of_questions)
         # You can now use these values as needed
         # For example: save to database, perform calculations, etc.
 
         # Return the same template with the submitted values preserved
         # request.session.clear()
-        request.session['quiz_data'] = list_of_questions
+        request.session['quiz_data'] = new_list
         # request.session['total'] = total
-        print(list_of_questions)
-        return render(request, 'quiz_preview_template.html', {'quiz_data': list_of_questions, 'total': total})
+        print(new_list)
+        return render(request, 'quiz_preview_template.html', {'quiz_data': new_list, 'total': total})
 
     # GET request - just show the empty form
     return render(request, 'genQ.html')

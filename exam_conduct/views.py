@@ -116,8 +116,8 @@ def submit_exam(request,session_id):
 
             results.append({
                 'question': question['question'],
-                'user_answer': " " + quiz_data[q_num-1]['option' + user_answer] if user_answer else "NOT ANSWERED",
-                'correct_answer': " " + quiz_data[q_num-1]['option' + question['correctoption']],
+                'user_answer': " " + quiz_data[q_num-1]['option' + user_answer.lower()] if user_answer else "NOT ANSWERED",
+                'correct_answer': " " + quiz_data[q_num-1]['option' + question['correctoption'].lower()],
                 'is_correct': is_correct,
                 'topic': question['topic']
             })

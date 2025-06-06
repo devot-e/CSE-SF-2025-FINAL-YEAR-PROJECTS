@@ -44,7 +44,7 @@
             {% csrf_token %}
 
             <div class="form-group">
-                <label for="value1">Computer Networks:</label>
+                <input for="topic1" name="topic1" id="topic1" value="computer Network"/>
                 <select name="value1" id="value1" class="sum-input">
                     {% for i in "x"|ljust:"101" %}
                         <option value="{{ forloop.counter0 }}">{{ forloop.counter0 }}</option>
@@ -53,7 +53,7 @@
             </div>
 
             <div class="form-group">
-                <label for="value2">DBMS:</label>
+                <input for="topic2" name="topic2" id="topic2" value="DBMS"/>
                 <select name="value2" id="value2" class="sum-input">
                     {% for i in "x"|ljust:"101" %}
                         <option value="{{ forloop.counter0 }}">{{ forloop.counter0 }}</option>
@@ -62,7 +62,7 @@
             </div>
 
             <div class="form-group">
-                <label for="value3">DSA:</label>
+                <input for="topic3" name="topic3" id="topic3" value="DSA"/>
                 <select name="value3" id="value3" class="sum-input">
                     {% for i in "x"|ljust:"101" %}
                         <option value="{{ forloop.counter0 }}">{{ forloop.counter0 }}</option>
@@ -71,7 +71,7 @@
             </div>
 
             <div class="form-group">
-                <label for="value4">Operating System:</label>
+                <input for="topic4" name="topic4" id="topic4" value="Operating System"/>
                 <select name="value4" id="value4" class="sum-input">
                     {% for i in "x"|ljust:"101" %}
                         <option value="{{ forloop.counter0 }}">{{ forloop.counter0 }}</option>
@@ -80,7 +80,7 @@
             </div>
 
             <div class="form-group">
-                <label for="value5">Theory Of Computation:</label>
+                <input for="topic5" name="topic5" id="topic5" value="Theory Of Computation"/>
                 <select name="value5" id="value5" class="sum-input">
                     {% for i in "x"|ljust:"101" %}
                         <option value="{{ forloop.counter0 }}">{{ forloop.counter0 }}</option>
@@ -93,7 +93,7 @@
                 <span id="total-sum" class="sum-display">0</span>
             </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary ">Submit</button>
         </form>
     </div>
 
