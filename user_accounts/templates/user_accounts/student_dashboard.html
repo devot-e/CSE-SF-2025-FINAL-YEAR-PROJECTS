@@ -47,7 +47,7 @@
                                             <td>{{ result.date }}</td>
                                             <td>{{ result.quiz_results.percentage }}%</td>
                                             <td>
-                                                <a href="#" class="btn btn-sm btn-outline-info">
+                                                <a href="{% url 'exam_analysis:result_analysis' exam_id=result.exam.exam_id student_id=student.student_id %}" class="btn btn-sm btn-outline-info">
                                                     View Details
                                                 </a>
                                             </td>

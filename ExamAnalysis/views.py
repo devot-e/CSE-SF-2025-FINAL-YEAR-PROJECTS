@@ -9,6 +9,7 @@ import base64
 import numpy as np
 from django.db.models import Avg, Count
 from exam_conduct.utility import is_teacher,is_student
+from exam_conduct.utility import create_radar_chart,process_quiz_data
 
 # Helper function to generate plot images
 def generate_plot():
@@ -24,12 +25,18 @@ def exam_analysis_detail(request, exam_id):
     exam = get_object_or_404(Exam, exam_id=exam_id)
     results = Result.objects.filter(exam=exam)
 
+    scores = []
+    result_count=0
+    avg_score = 0
+    for result in results:
+        result_count+=1
+        scores.append(result.quiz_results['percentage'])
+        avg_score+=result.quiz_results['percentage']
     # Overall exam statistics
-    avg_score = results.aggregate(Avg('scores__total'))['scores__total__avg']
+    avg_score /=result_count
     participation_count = results.count()
 
     # Score distribution plot
-    scores = [result.scores.get('total', 0) for result in results]
     plt.figure(figsize=(10, 5))
     plt.hist(scores, bins=10, edgecolor='black', color='#4e73df')
     plt.title(f'Score Distribution for {exam.exam_id}')
@@ -40,13 +47,13 @@ def exam_analysis_detail(request, exam_id):
 
     # Question analysis
     question_stats = []
-    for idx, question in enumerate(exam.quiz_questions, 1):
+    for idx in range(len(exam.quiz_questions)):
         correct = sum(1 for result in results
-                     if result.quiz_results['answers'].get(str(question['questionNo'])) == question['correctoption'])
+                     if result.quiz_results['results'][idx]['is_correct'])
         total = results.count()
         question_stats.append({
             'number': idx,
-            'text': question['question'],
+            'text': exam.quiz_questions[idx]['question'],
             'correct': correct,
             'total': total,
             'percentage': round((correct/total)*100, 2) if total > 0 else 0
@@ -54,6 +61,7 @@ def exam_analysis_detail(request, exam_id):
 
     context = {
         'exam': exam,
+        'results':results,
         'avg_score': round(avg_score, 2) if avg_score else 0,
         'participation_count': participation_count,
         'score_plot': score_plot,
@@ -69,12 +77,17 @@ def result_analysis_detail(request, exam_id, student_id):
 
     # Student's performance vs class average
     class_results = Result.objects.filter(exam=exam)
-    class_avg = class_results.aggregate(Avg('scores__total'))['scores__total__avg']
+    result_count=0
+    avg_score = 0
+    for tresult in class_results:
+        result_count+=1
+        avg_score+=tresult.quiz_results['percentage']
+    avg_score /=result_count
 
     # Comparison plot
     plt.figure(figsize=(8, 4))
     bars = plt.bar(['Your Score', 'Class Average'],
-                  [result.scores.get('total', 0), class_avg],
+                  [result.quiz_results['percentage'], avg_score],
                   color=['#1cc88a', '#36b9cc'])
     plt.bar_label(bars, fmt='%.1f%%')
     plt.title('Your Performance vs Class Average')
@@ -83,16 +96,24 @@ def result_analysis_detail(request, exam_id, student_id):
     plt.close()
 
     # Question-wise analysis
-    question_analysis = []
-    for question in exam.quiz_questions:
-        student_answer = result.quiz_results['answers'].get(str(question['questionNo']))
-        is_correct = student_answer == question['correctoption']
-        question_analysis.append({
-            'question': question['question'],
-            'your_answer': student_answer,
-            'correct_answer': question['correctoption'],
-            'is_correct': is_correct
-        })
+    question_analysis = result.quiz_results['results']
+    ''' each elements format
+        {'topic': 'questions/CN.json',
+        'question': 'What is the maximum length of a MAC address?',
+        'is_correct': False,
+        'user_answer': ' 128 bits',
+        'correct_answer': ' 48 bits'
+        }
+    '''
+    # for question in exam.quiz_questions:
+    #     student_answer = result.quiz_results['answers'].get(str(question['questionNo']))
+    #     is_correct = student_answer == question['correctoption']
+    #     question_analysis.append({
+    #         'question': question['question'],
+    #         'your_answer': student_answer,
+    #         'correct_answer': question['correctoption'],
+    #         'is_correct': is_correct
+    #     })
 
     context = {
         'exam': exam,
@@ -100,7 +121,8 @@ def result_analysis_detail(request, exam_id, student_id):
         'result': result,
         'comparison_plot': comparison_plot,
         'question_analysis': question_analysis,
-        'class_avg': round(class_avg, 2) if class_avg else 0,
+        'class_avg': round(avg_score, 2) if avg_score else 0,
+        'radar_plot': create_radar_chart(*process_quiz_data(result.quiz_results['results']))
     }
     return render(request, 'ExamAnalysis/result_analysis.html', context)
 
@@ -111,7 +133,7 @@ def student_performance(request, student_id):
 
     # Performance trend plot
     dates = [result.date.strftime('%Y-%m-%d') for result in results]
-    scores = [result.scores.get('total', 0) for result in results]
+    scores = [result.quiz_results['percentage'] for result in results]
 
     plt.figure(figsize=(10, 5))
     plt.plot(dates, scores, marker='o', color='#4e73df', linestyle='-')
