@@ -104,7 +104,7 @@
                                         <i class="fas fa-chart-line me-2"></i>My Performance
                                     </a></li>
                                 {% elif request.user.teacher %}
-                                    <li><a class="dropdown-item" href="#">
+                                    <li><a class="dropdown-item" href="{% url 'dashboard' %}">
                                         <i class="fas fa-chalkboard-teacher me-2"></i>Teacher Dashboard
                                     </a></li>
                                 {% endif %}
@@ -144,8 +144,8 @@
         <ul class="nav flex-column">
             {% if request.user.student %}
                 <li class="nav-item">
-                    <a class="nav-link {% if request.resolver_match.url_name == 'student_dashboard' %}active{% endif %}"
-                       href="{% url 'student_dashboard' %}">
+                    <a class="nav-link {% if request.resolver_match.url_name == 'dashboard' %}active{% endif %}"
+                       href="{% url 'dashboard' %}">
                         <i class="fas fa-tachometer-alt me-2"></i>Dashboard
                     </a>
                 </li>
@@ -161,13 +161,13 @@
                 </li>
             {% elif request.user.teacher %}
                 <li class="nav-item">
-                    <a class="nav-link {% if request.resolver_match.url_name == 'teacher_dashboard' %}active{% endif %}"
-                       href="{% url 'teacher_dashboard' %}">
+                    <a class="nav-link {% if request.resolver_match.url_name == 'dashboard' %}active{% endif %}"
+                       href="{% url 'dashboard' %}">
                         <i class="fas fa-tachometer-alt me-2"></i>Dashboard
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="/generate_exam/">
                         <i class="fas fa-plus-circle me-2"></i>Create Exam
                     </a>
                 </li>
