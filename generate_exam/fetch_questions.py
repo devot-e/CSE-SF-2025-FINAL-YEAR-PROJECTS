@@ -11,7 +11,7 @@ input_data = {
 # DeepSeek API configuration
 # API_URL = "https://api.deepseek.com/v1/chat/completions"  # Check the actual API endpoint
 API_URL='https://openrouter.ai/api/v1/chat/completions'
-
+#https://openrouter.ai/deepseek/deepseek-chat-v3-0324:free/api
 
 headers = {
     "Authorization": f"Bearer {API_KEY}",
