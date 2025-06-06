@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load customFilters %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Test</title>
+    <style>
+        .quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .question {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .question-number {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .option {
+            margin: 8px 0;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz Test</h1>
+        <form method="post" action="{% url 'save_quiz' %}">
+            {% csrf_token %}
+
+            {% for question in quiz_data %}
+            <div class="question">
+                <div class="question-number">Question {{ forloop.counter }}</div>
+                <div class="question-text">{{ question.question }}</div>
+
+                <div class="options">
+                    <div class="option">
+                        <!-- <input type="radio" name="q{{ forloop.counter }}" id="q{{ forloop.counter }}_a" value="A"> -->
+                        <label for="q{{ forloop.counter }}_a">A) {{ question.optionA }}</label>
+                    </div>
+                    <div class="option">
+                        <!-- <input type="radio" name="q{{ forloop.counter }}" id="q{{ forloop.counter }}_b" value="B"> -->
+                        <label for="q{{ forloop.counter }}_b">B) {{ question.optionB }}</label>
+                    </div>
+                    <div class="option">
+                        <!-- <input type="radio" name="q{{ forloop.counter }}" id="q{{ forloop.counter }}_c" value="C"> -->
+                        <label for="q{{ forloop.counter }}_c">C) {{ question.optionC }}</label>
+                    </div>
+                    <div class="option">
+                        <!-- <input type="radio" name="q{{ forloop.counter }}" id="q{{ forloop.counter }}_d" value="D"> -->
+                        <label for="q{{ forloop.counter }}_d">D) {{ question.optionD }}</label>
+                    </div>
+                </div>
+                <br>
+                <div class="correctOption">
+                   <label for="q{{ forloop.counter }}_{{ question.correctOption }}">Correct Option: {{ question|get_option:question.correctoption }}</label>
+                </div>
+            </div>
+            {% endfor %}
+
+            <button type="submit" class="submit-btn">Save Quiz</button>
+        </form>
+    </div>
+</body>
+</html>
+{% endblock %}
