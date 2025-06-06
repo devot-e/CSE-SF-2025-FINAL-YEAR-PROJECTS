@@ -1,0 +1,29 @@
+{% extends 'exam_conduct/exam_base.html' %}
+
+{% block title %}Exam Already Taken{% endblock %}
+
+{% block content %}
+<div id="exam-container" class="text-center">
+    <h2 class="text-danger"><i class="fas fa-exclamation-triangle"></i> Exam Already Submitted</h2>
+    <p>You have already submitted this exam. You cannot take it again.</p>
+    <p>Redirecting to your dashboard in <span id="countdown">5</span> seconds...</p>
+    <a href="{% url 'dashboard' %}" class="btn btn-primary mt-3">Go to Dashboard Now</a>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+    let seconds = 5;
+    const countdownSpan = document.getElementById('countdown');
+
+    const interval = setInterval(() => {
+        seconds--;
+        countdownSpan.textContent = seconds;
+
+        if (seconds <= 0) {
+            clearInterval(interval);
+            window.location.href = "{% url 'dashboard' %}";
+        }
+    }, 1000);
+</script>
+{% endblock %}
