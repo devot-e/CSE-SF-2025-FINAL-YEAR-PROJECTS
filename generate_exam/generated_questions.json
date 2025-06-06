@@ -1,0 +1,11 @@
+[
+  {
+    "topic": "Automata",
+    "question": "Which of the following is NOT a type of finite automaton?",
+    "optiona": "Deterministic Finite Automaton (DFA)",
+    "optionb": "Non-deterministic Finite Automaton (NFA)",
+    "optionc": "Pushdown Automaton (PDA)",
+    "optiond": "Linear Bounded Automaton (LBA)",
+    "correctoption": "C"
+  }
+]

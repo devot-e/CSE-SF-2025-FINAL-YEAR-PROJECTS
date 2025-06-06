@@ -1,0 +1,11 @@
+[
+  {
+    "topic": "Automata",
+    "question": "Which of the following is a type of finite automaton that can have multiple active states at any given time?",
+    "optiona": "Deterministic Finite Automaton (DFA)",
+    "optionb": "Non-Deterministic Finite Automaton (NFA)",
+    "optionc": "Pushdown Automaton (PDA)",
+    "optiond": "Turing Machine",
+    "correctoption": "B"
+  }
+]
