@@ -34,3 +34,10 @@ Thumbs.db
 # User-specific files
 users.csv
 users.csv/
+
+*.png
+.png
+.svg
+*.svg
+.dot
+*.dot

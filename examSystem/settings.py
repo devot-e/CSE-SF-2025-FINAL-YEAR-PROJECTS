@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'exam_conduct',
     'ExamAnalysis',
     'chartjs',
+    'django_extensions',
+    'djangoviz',
 ]
 
 MIDDLEWARE = [
